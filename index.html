@@ -3,19 +3,1713 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personal Longevus | Wellington Brito</title>
-<meta name="robots" content="noindex, follow">
+<title>Wellington Brito | Personal Trainer · Saúde e Longevidade</title>
+<meta name="description" content="Personal trainer especializado em treinamento neurofuncional para adultos 50+ em São Bernardo do Campo (SBC). Envelheça com autonomia, segurança e independência.">
+<meta name="keywords" content="personal trainer São Bernardo do Campo, personal trainer 50 anos SBC, treinamento neurofuncional, gerontologia, personal idoso São Bernardo, envelhecimento ativo SBC">
 <link rel="canonical" href="https://britowellington.github.io/personal-longevus/">
-<meta http-equiv="refresh" content="0; url=https://britowellington.github.io/personal-longevus/">
-<script>
-  location.replace('https://britowellington.github.io/personal-longevus/' + location.search + location.hash);
+
+<!-- ── SEO: Open Graph (compartilhamento Facebook/WhatsApp) ── -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Personal Longevus · Wellington Brito">
+<meta property="og:title" content="Wellington Brito | Personal Trainer · Saúde e Longevidade">
+<meta property="og:description" content="Personal Longevus: treinamento para adultos 50+ em São Bernardo do Campo. Envelheça com autonomia, segurança e independência.">
+<meta property="og:url" content="https://britowellington.github.io/personal-longevus/">
+<meta property="og:image" content="https://britowellington.github.io/personal-longevus/wellington-foto.jpg">
+
+<!-- ── SEO: Twitter Card ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wellington Brito | Personal Trainer · Saúde e Longevidade">
+<meta name="twitter:description" content="Personal Longevus: treinamento para adultos 50+ em São Bernardo do Campo. Envelheça com autonomia, segurança e independência.">
+
+<!-- ── SEO: Robots e geolocalização ── -->
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Wellington Brito">
+<meta name="geo.region" content="BR-SP">
+<meta name="geo.placename" content="São Bernardo do Campo">
+
+<!-- ── SEO: Dados estruturados (Schema.org) — Negócio Local / Profissional ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["HealthAndBeautyBusiness", "LocalBusiness"],
+  "@id": "https://britowellington.github.io/personal-longevus/#business",
+  "name": "Personal Longevus · Wellington Brito",
+  "description": "Personal trainer especializado em treinamento neurofuncional para adultos acima de 50 anos. Foco em autonomia, equilíbrio, força e prevenção de quedas. Atendimento em São Bernardo do Campo e região.",
+  "url": "https://britowellington.github.io/personal-longevus/",
+  "telephone": "+5511977431011",
+  "priceRange": "$$",
+  "image": "https://britowellington.github.io/personal-longevus/wellington-foto.jpg",
+  "founder": {
+    "@type": "Person",
+    "name": "Wellington Brito",
+    "jobTitle": "Personal Trainer Gerontologista · Especialista em Treinamento Neurofuncional"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "São Bernardo do Campo" },
+    { "@type": "AdministrativeArea", "name": "Grande ABC" },
+    { "@type": "AdministrativeArea", "name": "Região Metropolitana de São Paulo" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "São Bernardo do Campo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "knowsAbout": [
+    "Treinamento neurofuncional",
+    "Gerontologia",
+    "Prevenção de quedas",
+    "Sarcopenia",
+    "Envelhecimento ativo",
+    "Exercício para adultos 50+"
+  ],
+  "alternateName": "Wellington Brito Personal Trainer",
+  "sameAs": [
+    "https://instagram.com/britowellington",
+    "https://maps.app.goo.gl/rHMNdXkFbBv2rdjt6"
+  ],
+  "hasMap": "https://maps.app.goo.gl/rHMNdXkFbBv2rdjt6"
+}
 </script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  body { font-family: sans-serif; background: #FDFCFA; color: #1C1812; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; text-align: center; padding: 24px; }
-  a { color: #B85C38; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --cream: #F7F3EE; --warm: #EDE8E0; --white: #FDFCFA;
+    --dark: #1C1812; --charcoal: #2E2820;
+    --rust: #B85C38; --rust-light: #D4795A;
+    --muted: #8C7B6E; --border: #DDD5C5;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--dark); overflow-x: hidden; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 16px 56px;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(253,252,250,0.97); backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    transition: padding 0.3s;
+  }
+  .nav-left { display: flex; align-items: center; gap: 20px; }
+  .nav-logo-img { height: 42px; width: auto; display: block; }
+  .nav-links { display: flex; gap: 0; position: static; padding: 0; background: none; backdrop-filter: none; border: 0; }
+  .nav-link {
+    font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none; padding: 8px 14px;
+    border-radius: 2px; transition: color 0.2s, background 0.2s;
+    position: relative;
+  }
+  .nav-link:hover { color: var(--dark); }
+  .nav-link.active { color: var(--rust); }
+  .nav-link-badge {
+    display: inline-block; font-size: 0.52rem; letter-spacing: 0.1em;
+    background: var(--rust); color: var(--white);
+    padding: 2px 6px; border-radius: 2px; margin-left: 5px;
+    vertical-align: middle; text-transform: uppercase;
+  }
+  .nav-cta {
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+    text-decoration: none; color: var(--white); background: var(--dark);
+    padding: 11px 26px; border-radius: 2px; transition: background 0.2s; white-space: nowrap;
+  }
+  .nav-cta:hover { background: var(--rust); }
+  .nav-aluno {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 0.74rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; color: var(--rust); border: 1.5px solid var(--rust);
+    padding: 10px 20px; border-radius: 99px; transition: all 0.2s; white-space: nowrap;
+  }
+  .nav-aluno svg { width: 16px; height: 16px; flex-shrink: 0; }
+  .nav-aluno:hover { background: var(--rust); color: var(--white); }
+  .nav-link.only-mobile { display: none; }
+  .mobile-menu-btn { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; }
+  .mobile-menu-btn span { width: 22px; height: 1.5px; background: var(--dark); display: block; transition: all 0.3s; }
+
+  /* ── PÁGINAS (SPA) ── */
+  .page { display: none; }
+  .page.active { display: block; }
+
+  /* ── HERO HOME ── */
+  .hero {
+    min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr;
+    padding-top: 74px; background: var(--cream);
+  }
+  .hero-left {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 80px 64px 80px 80px;
+  }
+  .hero-eyebrow {
+    font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--rust); margin-bottom: 28px;
+    opacity: 0; animation: fadeUp 0.7s ease 0.2s forwards;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 5vw, 4.8rem); font-weight: 300; line-height: 1.05;
+    color: var(--dark); margin-bottom: 28px;
+    opacity: 0; animation: fadeUp 0.7s ease 0.4s forwards;
+  }
+  .hero-title em { font-style: italic; color: var(--rust); }
+  .hero-desc {
+    font-size: 1rem; font-weight: 300; color: var(--muted);
+    line-height: 1.85; max-width: 420px; margin-bottom: 48px;
+    opacity: 0; animation: fadeUp 0.7s ease 0.6s forwards;
+  }
+  .hero-desc strong { color: var(--dark); font-weight: 500; }
+  .hero-actions {
+    display: flex; flex-direction: column; gap: 14px; max-width: 320px;
+    opacity: 0; animation: fadeUp 0.7s ease 0.8s forwards;
+  }
+  .btn-primary {
+    display: block; text-align: center; text-decoration: none;
+    background: var(--dark); color: var(--white);
+    font-size: 0.78rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 17px 32px; border-radius: 2px; transition: all 0.25s; border: none; cursor: pointer;
+  }
+  .btn-primary:hover { background: var(--rust); transform: translateY(-1px); box-shadow: 0 6px 24px rgba(184,92,56,0.25); }
+  .btn-secondary {
+    display: block; text-align: center; text-decoration: none;
+    color: var(--dark); border: 1px solid var(--border);
+    font-size: 0.78rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 16px 32px; border-radius: 2px; transition: all 0.25s;
+  }
+  .btn-secondary:hover { border-color: var(--rust); color: var(--rust); }
+  .hero-stats {
+    display: flex; gap: 40px; margin-top: 56px; padding-top: 40px;
+    border-top: 1px solid var(--border);
+    opacity: 0; animation: fadeUp 0.7s ease 1s forwards;
+  }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.4rem; font-weight: 300; color: var(--rust); display: block; line-height: 1;
+  }
+  .stat-label { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-top: 5px; }
+  .hero-right {
+    position: relative; overflow: hidden; background: var(--warm);
+    opacity: 0; animation: fadeIn 1s ease 0.3s forwards;
+  }
+  .hero-photo-caption {
+    position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 36px;
+    background: linear-gradient(to top, rgba(28,24,18,0.85) 0%, transparent 100%);
+  }
+  .hero-photo-name { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 300; color: var(--white); display: block; }
+  .hero-photo-role { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(253,252,250,0.6); margin-top: 4px; }
+
+  /* ── DIVIDER STRIP ── */
+  .divider-strip {
+    background: var(--dark); padding: 28px 80px;
+    display: flex; gap: 60px; align-items: center; justify-content: center; flex-wrap: wrap;
+  }
+  .divider-item {
+    font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: rgba(253,252,250,0.45); display: flex; align-items: center; gap: 12px;
+  }
+  .divider-item::before { content: '◆'; color: var(--rust); font-size: 0.5rem; }
+
+  /* ── SECTIONS COMUM ── */
+  section { padding: 96px 80px; }
+  .container { max-width: 960px; margin: 0 auto; }
+  .s-label { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rust); display: block; margin-bottom: 14px; }
+  .s-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 4vw, 3.6rem); font-weight: 300; line-height: 1.1; color: var(--dark); margin-bottom: 18px; }
+  .s-title em { font-style: italic; color: var(--rust); }
+  .s-body { font-size: 0.95rem; font-weight: 300; color: var(--muted); line-height: 1.85; max-width: 520px; }
+
+  /* ── QUESTIONS ── */
+  .questions { background: var(--white); }
+  .q-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin: 52px 0; background: var(--border); }
+  .q-item { background: var(--white); padding: 36px 32px; display: flex; gap: 20px; align-items: flex-start; transition: background 0.2s; }
+  .q-item:hover { background: var(--cream); }
+  .q-mark { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--rust); color: var(--rust); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+  .q-text { font-size: 0.92rem; font-weight: 300; color: var(--charcoal); line-height: 1.65; }
+  .q-answer { background: var(--dark); padding: 40px 48px; border-left: 3px solid var(--rust); }
+  .q-answer p { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 300; font-style: italic; color: var(--white); line-height: 1.65; }
+  .q-answer strong { color: #D4795A; font-style: normal; font-weight: 400; }
+
+  /* ── ABOUT ── */
+  .about { background: var(--cream); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 80px; align-items: start; }
+  .about-img { width: 100%; aspect-ratio: 3/4; background: var(--warm); overflow: hidden; position: relative; }
+  .about-img-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(160deg, var(--warm) 0%, #D0C4B8 100%); gap: 12px; }
+  .about-img-placeholder span { font-family: 'Cormorant Garamond', serif; font-size: 6rem; color: var(--rust); opacity: 0.15; }
+  .about-badge { position: absolute; bottom: -1px; left: 0; right: 0; background: var(--rust); padding: 18px 28px; display: flex; gap: 16px; align-items: center; }
+  .about-badge-num { font-family: 'Cormorant Garamond', serif; font-size: 2.6rem; font-weight: 300; color: var(--white); line-height: 1; }
+  .about-badge-text { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(253,252,250,0.8); line-height: 1.5; }
+  .about-content { padding-top: 8px; }
+  .about-text { font-size: 0.94rem; font-weight: 300; color: var(--muted); line-height: 1.9; margin-bottom: 18px; }
+  .about-text strong { color: var(--dark); font-weight: 500; }
+  .creds { margin-top: 36px; display: flex; flex-direction: column; gap: 2px; }
+  .cred { background: var(--white); padding: 16px 20px; border-left: 2px solid var(--rust); }
+  .cred strong { display: block; font-size: 0.88rem; font-weight: 500; color: var(--dark); margin-bottom: 3px; }
+  .cred span { font-size: 0.8rem; color: var(--muted); font-weight: 300; }
+
+  /* ── FOR WHO ── */
+  .for-who { background: var(--white); }
+  .checks { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 48px; background: var(--border); }
+  .check-item { background: var(--white); padding: 28px 24px; display: flex; gap: 16px; align-items: flex-start; transition: background 0.2s; }
+  .check-item:hover { background: var(--cream); }
+  .check-icon { width: 26px; height: 26px; border: 1px solid var(--rust); border-radius: 2px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .check-icon svg { width: 12px; height: 12px; stroke: var(--rust); fill: none; stroke-width: 2.5; }
+  .check-text { font-size: 0.92rem; font-weight: 300; color: var(--charcoal); line-height: 1.65; }
+
+  /* ── SERVIÇOS PREVIEW ── */
+  .services-preview { background: var(--cream); }
+  .srv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 48px; background: var(--border); }
+  .srv-card { background: var(--cream); padding: 36px 28px; border-bottom: 3px solid transparent; transition: all 0.25s; cursor: pointer; }
+  .srv-card:hover { background: var(--white); border-bottom-color: var(--rust); transform: translateY(-2px); }
+  .srv-icon { display: block; margin-bottom: 18px; color: var(--rust); }
+  .srv-icon svg { width: 34px; height: 34px; }
+  .srv-tag { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rust); margin-bottom: 10px; display: block; }
+  .srv-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; color: var(--dark); margin-bottom: 10px; }
+  .srv-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.7; font-weight: 300; }
+  .srv-link { display: inline-block; margin-top: 18px; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rust); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+  .srv-link:hover { border-bottom-color: var(--rust); }
+
+  /* ── CONSULTA ── */
+  .consulta { background: var(--cream); }
+  .consulta-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 80px; align-items: start; }
+  .steps { display: flex; flex-direction: column; gap: 2px; margin-top: 44px; }
+  .step { display: flex; gap: 24px; background: var(--white); padding: 24px 28px; border-left: 2px solid transparent; transition: border-color 0.2s; }
+  .step:hover { border-left-color: var(--rust); }
+  .step-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--rust); line-height: 1; flex-shrink: 0; min-width: 32px; }
+  .step strong { display: block; font-size: 0.88rem; font-weight: 500; color: var(--dark); margin-bottom: 4px; }
+  .step p { font-size: 0.82rem; color: var(--muted); font-weight: 300; line-height: 1.6; }
+  .price-card { background: var(--dark); padding: 44px 40px; position: sticky; top: 96px; }
+  .price-card-label { font-size: 0.62rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rust); display: block; margin-bottom: 20px; }
+  .price-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 300; color: var(--white); line-height: 1.15; margin-bottom: 32px; }
+  .price-line { height: 1px; background: rgba(253,252,250,0.1); margin: 24px 0; }
+  .price-val { font-family: 'Cormorant Garamond', serif; font-size: 3.6rem; font-weight: 300; color: var(--rust-light); line-height: 1; }
+  .price-note { font-size: 0.8rem; color: rgba(253,252,250,0.45); font-weight: 300; line-height: 1.65; margin-top: 10px; }
+  .price-note strong { color: rgba(253,252,250,0.75); font-weight: 400; }
+  .price-card .btn-primary { margin-top: 28px; background: var(--rust); }
+  .price-card .btn-primary:hover { background: var(--rust-light); }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials { background: var(--white); }
+  .t-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 52px; background: var(--border); }
+  .t-card { background: var(--white); padding: 32px 28px; transition: background 0.2s; }
+  .t-card:hover { background: var(--cream); }
+  .t-stars { color: var(--rust); font-size: 0.75rem; letter-spacing: 3px; margin-bottom: 16px; }
+  .t-quote { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 300; font-style: italic; color: var(--charcoal); line-height: 1.7; margin-bottom: 20px; }
+  .t-name { font-size: 0.82rem; font-weight: 500; color: var(--dark); }
+  .t-role { font-size: 0.75rem; color: var(--muted); font-weight: 300; margin-top: 2px; }
+
+  /* ── FINAL CTA ── */
+  .final-cta { background: var(--dark); padding: 96px 80px; text-align: center; }
+  .final-cta-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 300; color: var(--white); line-height: 1.1; margin-bottom: 20px; }
+  .final-cta-title em { font-style: italic; color: var(--rust-light); }
+  .final-cta-sub { font-size: 0.95rem; color: rgba(253,252,250,0.45); font-weight: 300; margin-bottom: 40px; }
+  .final-cta .btn-primary { display: inline-block; background: var(--rust); max-width: 400px; }
+  .final-cta .btn-primary:hover { background: var(--rust-light); }
+  .whatsapp-row { display: flex; justify-content: center; gap: 16px; margin-top: 24px; flex-wrap: wrap; }
+  .wbtn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: rgba(253,252,250,0.6); font-size: 0.73rem; letter-spacing: 0.1em; border: 1px solid rgba(253,252,250,0.15); padding: 10px 20px; border-radius: 2px; transition: all 0.2s; }
+  .wbtn:hover { background: rgba(253,252,250,0.08); color: rgba(253,252,250,0.9); }
+
+  /* ── LONGEVUS PAGE ── */
+  .longevus-hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 74px; background: var(--cream); }
+  .hero-hybrid-badge { position: absolute; top: 32px; right: 32px; background: rgba(28,24,18,0.75); backdrop-filter: blur(10px); border: 1px solid rgba(184,92,56,0.35); padding: 12px 18px; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--rust-light); }
+  .for-who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; margin-top: 52px; }
+  .fw-lead { font-size: 0.95rem; font-weight: 300; color: var(--muted); line-height: 1.85; margin-bottom: 28px; }
+  .fw-quote { border-left: 2px solid var(--rust); padding: 18px 22px; background: var(--cream); font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; line-height: 1.65; color: var(--dark); }
+  .signs { display: flex; flex-direction: column; gap: 2px; }
+  .sign-item { display: flex; gap: 16px; align-items: flex-start; padding: 22px 20px; background: var(--white); border-left: 2px solid transparent; transition: border-color 0.2s, background 0.2s; }
+  .sign-item:hover { border-left-color: var(--rust); background: var(--cream); }
+  .sign-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--rust); margin-top: 6px; flex-shrink: 0; }
+  .sign-text { font-size: 0.92rem; font-weight: 300; color: var(--charcoal); line-height: 1.6; }
+  .sign-text strong { font-weight: 500; }
+  .how { background: var(--dark); }
+  .how .s-title { color: var(--white); }
+  .how .s-title em { color: var(--rust-light); }
+  .how .s-label { color: var(--rust-light); }
+  .how .s-body { color: rgba(253,252,250,0.45); }
+  .how-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 52px; background: rgba(253,252,250,0.04); }
+  .h-card { background: var(--dark); padding: 44px 40px; border: 1px solid rgba(253,252,250,0.06); transition: background 0.2s; position: relative; overflow: hidden; }
+  .h-card:hover { background: rgba(184,92,56,0.06); }
+  .h-freq { display: inline-block; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rust-light); border: 1px solid rgba(184,92,56,0.3); padding: 5px 14px; margin-bottom: 20px; }
+  .h-num { font-family: 'Cormorant Garamond', serif; font-size: 6rem; font-weight: 300; color: rgba(184,92,56,0.08); line-height: 1; position: absolute; right: 24px; bottom: 16px; }
+  .h-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; font-weight: 300; color: var(--white); margin-bottom: 12px; line-height: 1.15; }
+  .h-card p { font-size: 0.88rem; color: rgba(253,252,250,0.45); line-height: 1.85; font-weight: 300; margin-bottom: 24px; }
+  .h-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .h-list li { display: flex; align-items: flex-start; gap: 14px; font-size: 0.85rem; color: rgba(253,252,250,0.5); line-height: 1.5; }
+  .h-list li::before { content: ''; width: 16px; height: 1px; background: var(--rust); margin-top: 10px; flex-shrink: 0; }
+  .methodology { background: var(--cream); }
+  .method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; margin-top: 52px; }
+  .method-lead { font-size: 0.95rem; font-weight: 300; color: var(--muted); line-height: 1.85; margin-bottom: 28px; }
+  .method-pillars { display: flex; flex-direction: column; gap: 2px; }
+  .pillar { background: var(--white); padding: 24px 22px; display: flex; gap: 18px; align-items: flex-start; border-left: 2px solid transparent; transition: border-color 0.2s, background 0.2s; }
+  .pillar:hover { border-left-color: var(--rust); background: var(--cream); }
+  .pillar-icon { flex-shrink: 0; margin-top: 2px; color: var(--rust); }
+  .pillar-icon svg { width: 26px; height: 26px; }
+  .pillar-title { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 400; color: var(--dark); margin-bottom: 5px; }
+  .pillar-text { font-size: 0.82rem; line-height: 1.65; color: var(--muted); font-weight: 300; }
+  .method-quote { border-left: 2px solid var(--rust); padding: 18px 22px; background: var(--white); font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; line-height: 1.65; color: var(--dark); margin-bottom: 28px; }
+  .method-body { font-size: 0.92rem; font-weight: 300; color: var(--muted); line-height: 1.85; }
+  .results { background: var(--white); }
+  .results-top { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; margin-bottom: 52px; }
+  .results-top .s-body { max-width: 100%; }
+  .r-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); }
+  .r-card { background: var(--white); padding: 36px 28px; border-bottom: 2px solid transparent; transition: border-color 0.2s, background 0.2s; }
+  .r-card:hover { border-bottom-color: var(--rust); background: var(--cream); }
+  .r-icon { display: block; margin-bottom: 18px; color: var(--rust); }
+  .r-icon svg { width: 30px; height: 30px; }
+  .r-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; margin-bottom: 10px; color: var(--dark); }
+  .r-card p { font-size: 0.85rem; line-height: 1.75; color: var(--muted); font-weight: 300; }
+  .cta-final { background: var(--rust); padding: 96px 80px; text-align: center; }
+  .cta-final .s-label { color: rgba(253,252,250,0.65); }
+  .cta-final-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 300; color: var(--white); line-height: 1.1; margin-bottom: 20px; }
+  .cta-final-title em { font-style: italic; opacity: 0.75; }
+  .cta-final-body { font-size: 1rem; font-weight: 300; color: rgba(253,252,250,0.7); line-height: 1.85; max-width: 480px; margin: 0 auto 40px; }
+  .cta-final-btn { display: inline-block; text-decoration: none; background: var(--dark); color: var(--white); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; padding: 18px 44px; border-radius: 2px; transition: all 0.25s; }
+  .cta-final-btn:hover { background: var(--charcoal); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(28,24,18,0.3); }
+  .cta-note { font-size: 0.72rem; letter-spacing: 0.1em; color: rgba(253,252,250,0.5); margin-top: 18px; }
+
+  /* ── BLOG PAGE ── */
+  .blog-hero { padding: 140px 80px 80px; background: var(--cream); }
+  .blog-hero-inner { max-width: 760px; }
+  .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); }
+  .blog-card { background: var(--white); transition: background 0.2s; text-decoration: none; color: inherit; display: block; }
+  .blog-card:hover { background: var(--cream); }
+  .blog-card-img { width: 100%; aspect-ratio: 16/9; background: var(--warm); overflow: hidden; position: relative; }
+  .blog-card-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--rust); opacity: 0.35; }
+  .blog-card-img-placeholder svg { width: 56px; height: 56px; stroke-width: 1; }
+  .blog-card-body { padding: 28px 26px; }
+  .blog-cat { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--rust); margin-bottom: 10px; display: block; }
+  .blog-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; color: var(--dark); line-height: 1.3; margin-bottom: 10px; }
+  .blog-card p { font-size: 0.82rem; color: var(--muted); line-height: 1.65; font-weight: 300; }
+  .blog-meta { display: flex; gap: 14px; margin-top: 16px; align-items: center; }
+  .blog-date { font-size: 0.7rem; color: var(--muted); }
+  .blog-read { font-size: 0.7rem; color: var(--rust); letter-spacing: 0.08em; }
+  .blog-cta { background: var(--dark); padding: 72px 80px; text-align: center; }
+  .blog-cta p { font-size: 0.92rem; color: rgba(253,252,250,0.45); font-weight: 300; margin-bottom: 28px; line-height: 1.75; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+  /* ── ABOUT DARK (longevus) ── */
+  .about-dark { background: var(--dark); }
+  .about-dark .s-title { color: var(--white); }
+  .about-dark .s-title em { color: var(--rust-light); }
+  .about-dark .s-label { color: var(--rust-light); }
+  .about-dark-grid { display: grid; grid-template-columns: 300px 1fr; gap: 80px; align-items: start; }
+  .about-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center; display: block; background: var(--warm); }
+  .about-photo-frame { position: absolute; inset: -8px -8px; border: 1px solid rgba(184,92,56,0.25); pointer-events: none; }
+  .about-photo-wrap { position: relative; }
+  .about-creds { display: flex; flex-direction: column; gap: 2px; margin-top: 28px; }
+  .about-dark .cred { background: rgba(253,252,250,0.03); border: 1px solid rgba(253,252,250,0.05); padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start; border-left: none; }
+  .cred-dot { width: 6px; height: 6px; background: var(--rust); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+  .cred-text { font-size: 0.85rem; color: rgba(253,252,250,0.45); line-height: 1.6; }
+  .about-statement { margin-top: 28px; }
+  .about-statement p { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 300; font-style: italic; line-height: 1.65; color: rgba(253,252,250,0.7); margin-bottom: 20px; }
+  .about-statement strong { color: var(--white); font-style: normal; }
+  .about-note { font-size: 0.82rem; color: rgba(253,252,250,0.35); line-height: 1.75; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--charcoal); padding: 36px 80px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid rgba(253,252,250,0.06);
+  }
+  .footer-left { display: flex; align-items: center; gap: 20px; }
+  .footer-logo-img { height: 36px; width: auto; filter: brightness(0) invert(1) opacity(0.5); }
+  .footer-links { display: flex; gap: 24px; }
+  .footer-links a { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(253,252,250,0.3); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--rust-light); }
+  .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+  .footer-aluno { font-size: 0.8rem; color: var(--rust-light); text-decoration: none; border-bottom: 1px solid rgba(212,121,90,0.4); padding-bottom: 2px; }
+  .footer-aluno:hover { color: var(--white); border-bottom-color: var(--white); }
+  .footer-pro { font-size: 0.72rem; color: rgba(253,252,250,0.45); text-decoration: none; }
+  .footer-pro:hover { color: var(--rust-light); }
+  .footer-copy { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(253,252,250,0.2); }
+  .srv-btn { display: inline-block; margin-top: 22px; text-decoration: none; background: var(--dark); color: var(--white); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 13px 22px; border-radius: 2px; transition: background 0.2s; }
+  .srv-btn:hover { background: var(--rust); }
+  .srv-gift { display: block; margin-top: 14px; font-size: 0.78rem; color: var(--muted); text-decoration: none; }
+  .srv-gift:hover { color: var(--rust); }
+  .srv-extra { background: var(--white); }
+  .srv-extra .srv-card { background: var(--white); cursor: default; }
+  .srv-extra .srv-card:hover { background: var(--cream); }
+  .srv-aluno-note { margin-top: 28px; padding: 22px 26px; background: var(--cream); border-left: 2px solid var(--rust); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .srv-aluno-note p { font-size: 0.9rem; color: var(--charcoal); font-weight: 300; line-height: 1.6; }
+  .srv-aluno-note a { font-size: 0.74rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rust); text-decoration: none; font-weight: 500; white-space: nowrap; }
+
+  .faq-sec { background: var(--white); }
+  .faq { display: flex; flex-direction: column; gap: 2px; margin-top: 40px; }
+  .faq details { background: var(--cream); border-left: 2px solid transparent; padding: 0 24px; transition: border-color 0.2s; }
+  .faq details[open] { border-left-color: var(--rust); }
+  .faq summary { cursor: pointer; list-style: none; padding: 22px 0; font-size: 1rem; font-weight: 500; color: var(--dark); display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: '+'; color: var(--rust); font-size: 1.4rem; font-weight: 300; flex-shrink: 0; }
+  .faq details[open] summary::after { content: '−'; }
+  .faq .a { padding: 0 0 22px; font-size: 0.95rem; font-weight: 300; color: var(--muted); line-height: 1.8; }
+  .wa-float { position: fixed; right: 18px; bottom: 18px; z-index: 90; display: inline-flex; align-items: center; gap: 10px; background: #1FAF54; color: #fff; text-decoration: none; font-size: 0.92rem; font-weight: 500; padding: 14px 20px; border-radius: 99px; box-shadow: 0 8px 24px rgba(0,0,0,0.22); }
+  .wa-float:hover { background: #179446; }
+  @media (max-width: 900px) {
+    .hero-stats { flex-wrap: nowrap !important; gap: 18px !important; margin-top: 40px; padding-top: 28px; }
+    .stat-num { font-size: 1.9rem; }
+    .stat-label { font-size: 0.6rem; letter-spacing: 0.1em; }
+    .about-img { aspect-ratio: 1/1; }
+    .about-img img { object-position: center 35% !important; }
+    section { padding: 52px 24px; }
+    .q-grid { margin: 32px 0; }
+    .q-item { padding: 20px 16px; }
+    .q-answer { padding: 28px 26px; }
+    .q-answer p { font-size: 1.2rem; }
+    .srv-card { padding: 28px 22px; }
+  }
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 14px 20px; }
+    .nav-links { display: none; }
+    .mobile-menu-btn { display: flex; }
+    .nav-cta { display: none; }
+    .nav-link.only-mobile { display: block; color: var(--rust); }
+    .nav-aluno { padding: 11px 18px; font-size: 0.78rem; }
+    .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); padding: 16px; gap: 4px; }
+    section { padding: 64px 24px; }
+    .hero, .longevus-hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-right { min-height: 380px; }
+    .hero-left { padding: 60px 24px 48px; }
+    .hero-stats { gap: 24px; flex-wrap: wrap; }
+    .q-grid, .checks, .t-grid, .srv-grid, .r-grid, .blog-grid { grid-template-columns: 1fr; }
+    .about-grid, .consulta-grid, .for-who-grid, .how-grid, .method-grid, .results-top, .about-dark-grid { grid-template-columns: 1fr; gap: 40px; }
+    footer { flex-direction: column; gap: 20px; text-align: center; padding: 28px 24px; }
+    .footer-right { align-items: center; }
+    .footer-links { flex-wrap: wrap; justify-content: center; }
+    .divider-strip { padding: 20px 24px; gap: 24px; }
+    .final-cta, .cta-final, .blog-cta { padding: 64px 24px; }
+    .blog-hero { padding: 110px 24px 56px; }
+    .about-dark-grid { grid-template-columns: 1fr; }
+  }
+  .longevus-brand-logo { height: 130px; width: auto; max-width: 100%; display: block; margin-bottom: 28px; align-self: flex-start; object-fit: contain; }
+  @media (max-width: 900px) {
+    .longevus-brand-logo { height: 100px; margin-bottom: 20px; }
+    .hero, .longevus-hero { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .hero-title { font-size: 2.6rem; }
+  }
+  .about-dark-compact { padding-top: 72px; padding-bottom: 72px; }
+  .about-compact-grid { display: grid; grid-template-columns: 200px 1fr; gap: 56px; align-items: center; }
+  .about-compact-photo { position: relative; aspect-ratio: 1/1; border-radius: 50%; overflow: hidden; }
+  .about-compact-photo .about-photo-frame { border-radius: 50%; inset: -7px; }
+  .about-compact-sign { font-size: 0.82rem; letter-spacing: 0.04em; color: var(--rust-light); margin-top: 22px; font-weight: 400; }
+  .about-compact-link { display: inline-block; margin-top: 18px; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(253,252,250,0.65); text-decoration: none; border-bottom: 1px solid rgba(253,252,250,0.2); padding-bottom: 3px; transition: all 0.2s; }
+  .about-compact-link:hover { color: var(--rust-light); border-bottom-color: var(--rust-light); }
+  @media (max-width: 900px) {
+    .about-compact-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; justify-items: center; }
+    .about-compact-photo { width: 160px; }
+  }
+
+  /* ── ARTIGO ── */
+  .article-hero { padding: 130px 24px 50px; background: var(--cream); }
+  .article-hero-inner { max-width: 720px; margin: 0 auto; }
+  .article-back { display: inline-block; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-decoration: none; margin-bottom: 28px; transition: color 0.2s; }
+  .article-back:hover { color: var(--rust); }
+  .article-cat { display: block; font-size: 0.65rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--rust); margin-bottom: 18px; }
+  .article-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.1rem, 4.5vw, 3.4rem); font-weight: 300; line-height: 1.12; color: var(--dark); margin-bottom: 22px; }
+  .article-sub { font-size: 1.05rem; font-weight: 300; color: var(--muted); line-height: 1.7; font-style: italic; font-family: 'Cormorant Garamond', serif; }
+  .article-meta { display: flex; gap: 20px; align-items: center; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border); }
+  .article-author { font-size: 0.8rem; font-weight: 500; color: var(--dark); letter-spacing: 0.04em; }
+  .article-readtime { font-size: 0.78rem; color: var(--rust); letter-spacing: 0.06em; }
+  .article-body { max-width: 680px; margin: 0 auto; padding: 56px 24px 72px; }
+  .article-body p { font-size: 1.02rem; font-weight: 300; line-height: 1.9; color: var(--charcoal); margin-bottom: 24px; }
+  .article-body p strong { font-weight: 500; color: var(--dark); }
+  .article-body h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.85rem; font-weight: 400; color: var(--dark); line-height: 1.2; margin: 48px 0 20px; }
+  .article-body ul { margin: 0 0 24px; padding-left: 0; list-style: none; }
+  .article-body ul li { position: relative; padding-left: 28px; font-size: 1.02rem; font-weight: 300; line-height: 1.8; color: var(--charcoal); margin-bottom: 14px; }
+  .article-body ul li::before { content: ''; position: absolute; left: 0; top: 13px; width: 14px; height: 1px; background: var(--rust); }
+  .article-body ul li strong { font-weight: 500; color: var(--dark); }
+  .article-cta { background: var(--dark); padding: 72px 24px; text-align: center; }
+  .article-cta-inner { max-width: 560px; margin: 0 auto; }
+  .article-cta .s-label { color: var(--rust-light); }
+  .article-cta-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 300; color: var(--white); line-height: 1.15; margin-bottom: 18px; }
+  .article-cta-title em { font-style: italic; color: var(--rust-light); }
+  .article-cta-body { font-size: 0.95rem; font-weight: 300; color: rgba(253,252,250,0.5); line-height: 1.8; margin-bottom: 36px; }
+  .article-cta .article-back { color: rgba(253,252,250,0.5); }
+  .article-cta .article-back:hover { color: var(--rust-light); }
+  @media (max-width: 900px) {
+    .article-hero { padding: 100px 24px 40px; }
+    .article-body { padding: 44px 24px 56px; }
+    .article-body h2 { font-size: 1.6rem; margin: 38px 0 16px; }
+    .article-cta { padding: 56px 24px; }
+  }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": "https://britowellington.github.io/personal-longevus/#blog",
+  "name": "Blog Wellington Brito · Envelhecimento Ativo e Treinamento 50+",
+  "description": "Artigos sobre treinamento neurofuncional, longevidade ativa e saúde do adulto acima de 50 anos.",
+  "url": "https://britowellington.github.io/personal-longevus/#blog",
+  "inLanguage": "pt-BR",
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Por que o risco de queda aumenta após os 60 anos e o que fazer a respeito",
+      "description": "As quedas são uma das principais causas de hospitalização e perda de autonomia em pessoas acima de 60 anos. A boa notícia: a maioria pode ser evitada.",
+      "articleSection": "Equilíbrio e Prevenção",
+      "url": "https://britowellington.github.io/personal-longevus/#artigo-quedas",
+      "author": {
+        "@type": "Person",
+        "name": "Wellington Brito"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Personal Longevus · Wellington Brito"
+      },
+      "inLanguage": "pt-BR",
+      "about": "Treinamento neurofuncional e saúde do adulto 50+"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Como o exercício físico protege a memória: o que a ciência já comprovou",
+      "description": "O exercício não fortalece só os músculos. Ele é um dos mais potentes protetores do cérebro que conhecemos, e os efeitos sobre a memória são mensuráveis.",
+      "articleSection": "Neurociência",
+      "url": "https://britowellington.github.io/personal-longevus/#artigo-memoria",
+      "author": {
+        "@type": "Person",
+        "name": "Wellington Brito"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Personal Longevus · Wellington Brito"
+      },
+      "inLanguage": "pt-BR",
+      "about": "Treinamento neurofuncional e saúde do adulto 50+"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "5 exercícios seguros para fazer em casa depois dos 50 sem equipamento",
+      "description": "Você não precisa de academia nem de equipamentos para começar a fortalecer o corpo. Estes cinco movimentos trabalham força, equilíbrio e coordenação com segurança.",
+      "articleSection": "Treino em Casa",
+      "url": "https://britowellington.github.io/personal-longevus/#artigo-casa",
+      "author": {
+        "@type": "Person",
+        "name": "Wellington Brito"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Personal Longevus · Wellington Brito"
+      },
+      "inLanguage": "pt-BR",
+      "about": "Treinamento neurofuncional e saúde do adulto 50+"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Artrose, hipertensão e diabetes: quando e como treinar com segurança",
+      "description": "Ter uma condição crônica não é motivo para parar de se exercitar. É motivo para se exercitar do jeito certo, com prescrição adequada ao seu quadro.",
+      "articleSection": "Saúde e Dor Crônica",
+      "url": "https://britowellington.github.io/personal-longevus/#artigo-comorbidades",
+      "author": {
+        "@type": "Person",
+        "name": "Wellington Brito"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Personal Longevus · Wellington Brito"
+      },
+      "inLanguage": "pt-BR",
+      "about": "Treinamento neurofuncional e saúde do adulto 50+"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Sarcopenia: a perda muscular silenciosa que rouba sua autonomia",
+      "description": "A partir dos 50 anos, perdemos massa muscular de forma progressiva. Entender esse processo e agir sobre ele é uma das chaves para envelhecer com independência.",
+      "articleSection": "Força e Longevidade",
+      "url": "https://britowellington.github.io/personal-longevus/#artigo-sarcopenia",
+      "author": {
+        "@type": "Person",
+        "name": "Wellington Brito"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Personal Longevus · Wellington Brito"
+      },
+      "inLanguage": "pt-BR",
+      "about": "Treinamento neurofuncional e saúde do adulto 50+"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Por que adultos 50+ abandonam o treino e o que realmente mantém a consistência",
+      "description": "A falta de consistência raramente é preguiça. Quase sempre é falta de método, de adaptação e de um motivo forte o suficiente. Vamos falar honestamente sobre isso.",
+      "articleSection": "Comportamento e Hábitos",
+      "url": "https://britowellington.github.io/personal-longevus/#artigo-consistencia",
+      "author": {
+        "@type": "Person",
+        "name": "Wellington Brito"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Personal Longevus · Wellington Brito"
+      },
+      "inLanguage": "pt-BR",
+      "about": "Treinamento neurofuncional e saúde do adulto 50+"
+    }
+  ]
+}
+</script>
 </head>
 <body>
-  <p>O site agora se chama Personal Longevus.<br><a href="https://britowellington.github.io/personal-longevus/">Toque aqui se não for redirecionado</a></p>
+
+<!-- ── NAVEGAÇÃO ── -->
+<nav id="main-nav">
+  <div class="nav-left">
+    <img src="logo-wellington.png" alt="Wellington Brito Personal Trainer" class="nav-logo-img">
+    <nav class="nav-links" id="nav-links">
+      <a href="#" class="nav-link active" onclick="showPage('home'); return false;">Início</a>
+      <a href="#" class="nav-link" onclick="showPage('longevus'); return false;">Longevus <span class="nav-link-badge">Programa</span></a>
+      <a href="#" class="nav-link" onclick="showPage('blog'); return false;">Blog</a>
+      <a href="#" class="nav-link" onclick="showPage('home'); scrollToId('sobre'); return false;">Sobre</a>
+      <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="nav-link only-mobile">Agendar avaliação</a>
+    </nav>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="nav-aluno"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span>Área do aluno</span></a>
+    <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="nav-cta">Agendar avaliação</a>
+    <div class="mobile-menu-btn" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════ -->
+<!--  PÁGINA HOME                          -->
+<!-- ══════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+<section class="hero">
+  <div class="hero-left">
+    <span class="hero-eyebrow">Especialista em Envelhecimento · São Bernardo do Campo</span>
+    <h1 class="hero-title">Autonomia<br>é o melhor<br><em>resultado</em></h1>
+    <p class="hero-desc">
+      Treinamento neurofuncional para adultos <strong>50+</strong>, com método científico, abordagem clínica e acompanhamento individualizado. Para quem quer envelhecer com <strong>segurança, dignidade e independência</strong>.
+    </p>
+    <div class="hero-actions">
+      <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="btn-primary">Agendar minha avaliação física</a>
+      <a href="#" onclick="scrollToId('como-funciona'); return false;" class="btn-secondary">Como funciona</a>
+    </div>
+    <div class="hero-stats">
+      <div><span class="stat-num">15+</span><span class="stat-label">Anos de experiência</span></div>
+      <div><span class="stat-num">50+</span><span class="stat-label">Especialidade</span></div>
+      <div><span class="stat-num">SBC</span><span class="stat-label">e região</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="wellington-foto.jpg" alt="Wellington Brito, personal trainer especialista em treinamento neurofuncional 50+" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;">
+    <div class="hero-photo-caption">
+      <span class="hero-photo-name">Wellington Brito</span>
+      <div class="hero-photo-role">Personal Trainer · Especialista em Envelhecimento</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- QUESTIONS -->
+<section class="questions">
+  <div class="container">
+    <span class="s-label reveal">Você se identifica?</span>
+    <h2 class="s-title reveal">Talvez uma dessas<br>situações <em>seja sua</em></h2>
+    <p class="s-body reveal">Depois dos 50, o corpo muda. E o treino precisa mudar junto.</p>
+    <div class="q-grid reveal">
+      <div class="q-item"><div class="q-mark">?</div><p class="q-text">Já tentou treinar, mas não conseguiu manter consistência por muito tempo?</p></div>
+      <div class="q-item"><div class="q-mark">?</div><p class="q-text">Sente insegurança em relação a dores, limitações ou risco de se machucar?</p></div>
+      <div class="q-item"><div class="q-mark">?</div><p class="q-text">Não sabe ao certo o que pode ou não fazer com segurança na sua fase de vida?</p></div>
+      <div class="q-item"><div class="q-mark">?</div><p class="q-text">Quer cuidar do corpo com método, sem exageros e sem improviso?</p></div>
+    </div>
+    <div class="q-answer reveal">
+      <p>Se respondeu sim para qualquer uma, <strong>isso é exatamente para o que eu trabalho.</strong> O maior erro depois dos 50 não é a falta de treino. É treinar sem planejamento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="consulta" id="como-funciona">
+  <div class="container">
+    <span class="s-label reveal">Como funciona</span>
+    <h2 class="s-title reveal">Três passos para<br>começar <em>com segurança</em></h2>
+    <div class="steps reveal">
+      <div class="step"><div class="step-num">01</div><div><strong>Avaliação física</strong><p>Histórico de saúde, dores e medicamentos, composição corporal e testes de equilíbrio, força e mobilidade.</p></div></div>
+      <div class="step"><div class="step-num">02</div><div><strong>Seu plano</strong><p>Monto um programa feito para o seu corpo e a sua rotina, e definimos juntos o melhor formato de acompanhamento.</p></div></div>
+      <div class="step"><div class="step-num">03</div><div><strong>Acompanhamento e evolução</strong><p>Treinos com supervisão, programa no app e reavaliações para você ver o quanto evoluiu.</p></div></div>
+    </div>
+    <div class="reveal" style="margin-top:32px;"><a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="btn-primary" style="display:inline-block;max-width:360px;width:100%;">Agendar minha avaliação física</a>
+    <p class="price-note" style="color:var(--muted);margin-top:12px;">Sem compromisso com continuidade.</p></div>
+  </div>
+</section>
+
+<!-- FORMAS -->
+<section class="services-preview" id="formas">
+  <div class="container">
+    <span class="s-label reveal">Formas de acompanhamento</span>
+    <h2 class="s-title reveal">Escolha o formato<br>que cabe <em>na sua vida</em></h2>
+    <div class="srv-grid reveal">
+      <div class="srv-card">
+        <span class="srv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 11l2.5 2.5a1.5 1.5 0 002.12 0l4.38-4.38"/><path d="M3 8l3-3 3 1"/><path d="M21 8l-3-3-3 1"/><path d="M6 5v6l2 2"/><path d="M18 5v6l-2 2"/></svg></span>
+        <span class="srv-tag">Presencial</span>
+        <h3>Personal presencial</h3>
+        <p>Treinos 2 ou 3 vezes por semana com acompanhamento em cada sessão. Na academia, no seu condomínio ou em casa.</p>
+        <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física.%20Tenho%20interesse%20no%20personal%20presencial." target="_blank" class="srv-link">Começar pela avaliação →</a>
+      </div>
+      <div class="srv-card">
+        <span class="srv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9.5 20v-5.5h5V20"/></svg></span>
+        <span class="srv-tag">Programa</span>
+        <h3>Longevus Híbrido</h3>
+        <p>Encontros presenciais comigo e, nos outros dias, um programa estruturado para fazer em casa pelo app.</p>
+        <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física.%20Tenho%20interesse%20no%20Longevus%20Híbrido." target="_blank" class="srv-link">Começar pela avaliação →</a>
+        <a href="#" onclick="showPage('longevus'); return false;" class="srv-gift">Conhecer o programa</a>
+      </div>
+      <div class="srv-card">
+        <span class="srv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg></span>
+        <span class="srv-tag">Online</span>
+        <h3>Consultoria online</h3>
+        <p>Programa individual no app, com suporte direto comigo. Para quem está em outra cidade ou prefere treinar no próprio ritmo.</p>
+        <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física.%20Tenho%20interesse%20no%20consultoria%20online." target="_blank" class="srv-link">Começar pela avaliação →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="testimonials">
+  <div class="container">
+    <span class="s-label reveal">O que dizem os alunos</span>
+    <h2 class="s-title reveal">Resultados que<br><em>falam por si</em></h2>
+    <div class="t-grid reveal">
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"Depois dos 60 eu achava que não ia mais conseguir treinar com qualidade. O Wellington me mostrou que eu estava errada."</p>
+        <div class="t-name">Maria Aparecida S.</div>
+        <div class="t-role">62 anos · São Bernardo do Campo</div>
+      </div>
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"Tinha medo de cair, de me machucar. Hoje subo escada, carrego neto e ainda faço meu programa em casa com segurança."</p>
+        <div class="t-name">Roberto M.</div>
+        <div class="t-role">67 anos · São Bernardo do Campo · Centro</div>
+      </div>
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"A abordagem clínica fez toda a diferença. Ele entende de hipertensão, de artrose, de como o corpo da gente funciona depois dos 50."</p>
+        <div class="t-name">Lúcia F.</div>
+        <div class="t-role">58 anos · São Bernardo do Campo · Rudge Ramos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="about" id="sobre">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img">
+          <img src="wellington-foto.jpg" alt="Wellington Brito, personal trainer há mais de 15 anos" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;">
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-num">15+</div>
+          <div class="about-badge-text">Anos de<br>experiência</div>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <span class="s-label">Com quem você vai treinar</span>
+        <h2 class="s-title">Wellington<br><em>Brito</em></h2>
+        <p class="about-text">Sou personal trainer há mais de 15 anos e me especializei em atender pessoas 50+. Minha abordagem une ciência, cuidado clínico e escuta ativa. Não ofereço promessas rápidas: ofereço <strong>um planejamento real, adaptado ao seu corpo hoje</strong>.</p>
+        <div class="creds">
+          <div class="cred"><strong>Especialização em Gerontologia</strong><span>Envelhecimento ativo e capacidade funcional</span></div>
+          <div class="cred"><strong>Treinamento Neurofuncional</strong><span>Método baseado em ACSM, AHA e modelo funcional de Spirduso</span></div>
+          <div class="cred"><strong>Academia TEM · Unidade Nova Petrópolis</strong><span>Atendimento em domicílio, condomínios e parques</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-sec" id="perguntas">
+  <div class="container">
+    <span class="s-label reveal">Perguntas frequentes</span>
+    <h2 class="s-title reveal">Antes de <em>começar</em></h2>
+    <div class="faq reveal">
+      <details><summary>Tenho artrose, hipertensão ou diabetes. Posso treinar?</summary><div class="a">Pode, e deve. Na avaliação eu identifico suas condições e limitações, e o programa é montado em cima delas. Quando necessário, peço a liberação do seu médico antes de começar.</div></details>
+      <details><summary>Nunca treinei ou estou parado há anos. É para mim?</summary><div class="a">É exatamente para você. O treino começa do seu ponto de partida real, com progressão segura, sem exageros.</div></details>
+      <details><summary>Onde são os atendimentos?</summary><div class="a">Em São Bernardo do Campo e região: na Academia TEM (Nova Petrópolis), em domicílio, em condomínios e em parques. Para outras cidades, existe a consultoria online.</div></details>
+      <details><summary>Quanto custa?</summary><div class="a">Depende do formato e da frequência. Me chama no WhatsApp que eu te passo as opções e os valores, incluindo a avaliação física, e você decide com calma.</div></details>
+      <details><summary>Posso contratar para meu pai ou minha mãe?</summary><div class="a">Pode. Muitas famílias me procuram assim. Você agenda a avaliação em nome deles e eu explico tudo para vocês dois.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <h2 class="final-cta-title reveal">Seu próximo passo<br>começa <em>agora</em></h2>
+  <p class="final-cta-sub reveal">Comece pela avaliação física, sem compromisso com continuidade. Uma conversa basta para saber se faz sentido para você.</p>
+  <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="btn-primary reveal">Agendar minha avaliação física</a>
+  <div class="whatsapp-row reveal">
+    <a href="https://wa.me/5511977431011" target="_blank" class="wbtn">
+      <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      (11) 97743-1011
+    </a>
+    <a href="https://instagram.com/britowellington" target="_blank" class="wbtn">
+      <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      @britowellington
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">
+    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
+    <div class="footer-links">
+      <a href="#" onclick="showPage('home'); return false;">Início</a>
+      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
+      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
+    </div>
+  </div>
+  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
+</footer>
+
+</div><!-- /page-home -->
+
+<!-- ══════════════════════════════════════ -->
+<!--  PÁGINA LONGEVUS                      -->
+<!-- ══════════════════════════════════════ -->
+<div class="page" id="page-longevus">
+
+<section class="longevus-hero">
+  <div class="hero-left">
+    <img src="logo-longevus.png" alt="Longevus - Envelhecimento Saudável" class="longevus-brand-logo">
+    <span class="hero-eyebrow">Programa Híbrido · Neurofuncional 50+</span>
+    <h1 class="hero-title">Acompanhamento <em>presencial.</em><br>Prática no seu lar.</h1>
+    <p class="hero-desc">
+      Um programa estruturado que combina <strong>encontros presenciais</strong> com Wellington e um protocolo domiciliar, guiado de exercícios físicos e cognitivos para quem quer resultado clínico real com a praticidade do dia a dia.
+    </p>
+    <div class="hero-actions">
+      <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Tenho%20interesse%20no%20Programa%20Híbrido%20Longevus%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary">Quero iniciar o programa</a>
+      <a href="#longevus-como-funciona" class="btn-secondary">Como funciona</a>
+    </div>
+    <div class="hero-stats">
+      <div><span class="stat-num">15+</span><span class="stat-label">Anos de experiência</span></div>
+      <div><span class="stat-num">50+</span><span class="stat-label">Público especializado</span></div>
+    </div>
+  </div>
+  <div class="hero-right" style="background:#1C1812; position:relative; min-height:420px;">
+    <img src="wellington-foto.jpg" alt="Wellington Brito conduzindo o programa Longevus" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;">
+    <div class="hero-hybrid-badge">Programa Híbrido</div>
+    <div class="hero-photo-caption">
+      <span class="hero-photo-name">Wellington Brito</span>
+      <span class="hero-photo-role">Especialista em Gerontologia · São Bernardo do Campo</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider-strip">
+  <div class="divider-item">Avaliação Neurofuncional</div>
+  <div class="divider-item">Encontro Mensal Presencial</div>
+  <div class="divider-item">Protocolo Domiciliar</div>
+  <div class="divider-item">Acompanhamento Contínuo</div>
+  <div class="divider-item">Resultados Mensuráveis</div>
+</div>
+
+<!-- PARA QUEM É -->
+<section class="for-who" id="longevus-sobre">
+  <div class="container">
+    <div class="reveal">
+      <span class="s-label">Para quem é</span>
+      <h2 class="s-title">Para quem quer <em>mais</em><br>sem abrir mão da rotina.</h2>
+    </div>
+    <div class="for-who-grid">
+      <div class="reveal">
+        <p class="fw-lead">O programa híbrido Longevus foi criado para adultos acima de 50 anos que precisam de acompanhamento especializado, mas não têm disponibilidade para treinar presencialmente todos os dias da semana.</p>
+        <blockquote class="fw-quote">"Encontros mensais com o Wellington e os demais dias em casa com um programa real, estruturado e seguro."</blockquote>
+      </div>
+      <div class="signs reveal">
+        <div class="sign-item"><div class="sign-dot"></div><div class="sign-text"><strong>Tem agenda cheia</strong> e não consegue se comprometer com sessões frequentes</div></div>
+        <div class="sign-item"><div class="sign-dot"></div><div class="sign-text"><strong>Prefere treinar em casa</strong> na maior parte dos dias, mas quer supervisão clínica regular</div></div>
+        <div class="sign-item"><div class="sign-dot"></div><div class="sign-text"><strong>Sente queda na memória</strong>, equilíbrio ou disposição e quer uma intervenção com rigor clínico</div></div>
+        <div class="sign-item"><div class="sign-dot"></div><div class="sign-text"><strong>Tem comorbidades</strong> e precisa de exercício prescrito, não de academia genérica</div></div>
+        <div class="sign-item"><div class="sign-dot"></div><div class="sign-text"><strong>Quer envelhecer com autonomia</strong> e procura um método que una corpo e mente de forma integrada</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="how" id="longevus-como-funciona">
+  <div class="container">
+    <div class="reveal">
+      <span class="s-label">Estrutura do programa</span>
+      <h2 class="s-title">Como o programa<br><em>híbrido</em> funciona</h2>
+      <p class="s-body">Cada etapa foi desenhada para garantir progressão segura, continuidade do estímulo e evolução mensurável.</p>
+    </div>
+    <div class="how-grid">
+      <div class="h-card reveal">
+        <span class="h-freq">Início Obrigatório</span>
+        <h3>Avaliação Inicial</h3>
+        <p>Sessão presencial com anamnese completa e avaliação neurofuncional para entender seu perfil clínico e construir o protocolo correto.</p>
+        <ul class="h-list">
+          <li>Anamnese clínica detalhada</li>
+          <li>Avaliação funcional e neurocognitiva</li>
+          <li>Identificação de comorbidades e limitações</li>
+          <li>Definição de objetivos e metas reais</li>
+        </ul>
+        <span class="h-num">01</span>
+      </div>
+      <div class="h-card reveal">
+        <span class="h-freq">A cada 15 dias · Presencial</span>
+        <h3>Encontro Mensal</h3>
+        <p>Sessão presencial com Wellington para aplicação do protocolo, reavaliação do progresso, ajustes do programa e aprofundamento dos estímulos neurocognitivos.</p>
+        <ul class="h-list">
+          <li>Execução supervisionada do protocolo</li>
+          <li>Avaliação de progressão e recalibração</li>
+          <li>Estímulos neurocognitivos integrados</li>
+          <li>Escuta ativa e vínculo terapêutico</li>
+        </ul>
+        <span class="h-num">02</span>
+      </div>
+      <div class="h-card reveal">
+        <span class="h-freq">Demais dias · Domiciliar</span>
+        <h3>Programa em Casa</h3>
+        <p>Entre os encontros presenciais, você executa um programa prescrito individualmente com exercícios de força e estímulos cognitivos para prática autônoma e segura.</p>
+        <ul class="h-list">
+          <li>Exercícios de força adaptados ao perfil clínico</li>
+          <li>Estímulos neurocognitivos para realizar sozinho</li>
+          <li>Execução autônoma, segura e progressiva</li>
+          <li>Suporte via WhatsApp com Wellington</li>
+        </ul>
+        <span class="h-num">03</span>
+      </div>
+      <div class="h-card reveal">
+        <span class="h-freq">Contínuo · Ao longo do programa</span>
+        <h3>Monitoramento e Evolução</h3>
+        <p>Wellington acompanha sua trajetória de forma contínua, ajustando o protocolo domiciliar e a intensidade dos encontros conforme sua evolução clínica.</p>
+        <ul class="h-list">
+          <li>Revisão periódica dos objetivos</li>
+          <li>Atualização do protocolo domiciliar</li>
+          <li>Canal direto para dúvidas no dia a dia</li>
+          <li>Relatório de evolução funcional</li>
+        </ul>
+        <span class="h-num">04</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METODOLOGIA -->
+<section class="methodology">
+  <div class="container">
+    <div class="reveal">
+      <span class="s-label">Metodologia</span>
+      <h2 class="s-title">Um método que <em>integra</em><br>corpo e mente.</h2>
+    </div>
+    <div class="method-grid">
+      <div class="reveal">
+        <blockquote class="method-quote">"Não basta exercitar o corpo é preciso estimular o cérebro ao mesmo tempo. É aí que mora a diferença entre envelhecer e envelhecer bem."</blockquote>
+        <p class="method-body">O programa Longevus é fundamentado na integração entre treinamento neurofuncional e estimulação cognitiva. Cada sessão e cada exercício domiciliar são desenhados para trabalhar força, equilíbrio, coordenação e funções cognitivas de forma simultânea e progressiva.</p>
+      </div>
+      <div class="method-pillars reveal">
+        <div class="pillar"><span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 4.5a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 00-1.5 4.3A2.5 2.5 0 007 16a2.5 2.5 0 002.5 2.5z"/><path d="M14.5 4.5A2.5 2.5 0 0117 7a2.5 2.5 0 011.5 4.3A2.5 2.5 0 0117 16a2.5 2.5 0 01-2.5 2.5z"/><line x1="12" y1="4.5" x2="12" y2="19"/></svg></span><div><div class="pillar-title">Estimulação Neurocognitiva</div><div class="pillar-text">Exercícios que desafiam memória de trabalho, atenção dividida e velocidade de processamento integrados ao movimento físico.</div></div></div>
+        <div class="pillar"><span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 7v10"/><path d="M17.5 7v10"/><line x1="6.5" y1="12" x2="17.5" y2="12"/><path d="M3.5 9.5v5"/><path d="M20.5 9.5v5"/></svg></span><div><div class="pillar-title">Força e Funcionalidade</div><div class="pillar-text">Protocolo progressivo de força muscular adaptado ao perfil clínico, com foco em autonomia e prevenção de quedas.</div></div></div>
+        <div class="pillar"><span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"/><path d="M5 7h14"/><path d="M5 7l-2 5a3 3 0 006 0z"/><path d="M19 7l-2 5a3 3 0 006 0z"/><path d="M9 20h6"/><path d="M12 7v13"/></svg></span><div><div class="pillar-title">Equilíbrio e Marcha</div><div class="pillar-text">Treinamento específico de equilíbrio estático e dinâmico para segurança nas atividades do dia a dia.</div></div></div>
+        <div class="pillar"><span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="1.5"/><path d="M9 4V3a3 3 0 016 0v1"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/></svg></span><div><div class="pillar-title">Protocolo Individualizado</div><div class="pillar-text">Cada programa é construído do zero para o perfil do aluno, sem receitas genéricas.</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<section class="results" id="longevus-resultados">
+  <div class="container">
+    <div class="results-top reveal">
+      <div>
+        <span class="s-label">O que você conquista</span>
+        <h2 class="s-title">Resultados <em>reais,</em><br>mensuráveis.</h2>
+      </div>
+      <p class="s-body">O programa híbrido Longevus produz transformações concretas e progressivas na sua capacidade funcional, cognitiva e qualidade de vida.</p>
+    </div>
+    <div class="r-grid">
+      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="5" r="1.6"/><path d="M13 9l-3 2 1 4"/><path d="M11 15l-2 5"/><path d="M12 13l3 2 1 4"/><path d="M10 11L6 10"/><path d="M13 9l4 1"/></svg></span><h4>Força e Mobilidade</h4><p>Recuperação e manutenção da capacidade funcional para as atividades do dia a dia com segurança e independência.</p></div>
+      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 4.5a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 00-1.5 4.3A2.5 2.5 0 007 16a2.5 2.5 0 002.5 2.5z"/><path d="M14.5 4.5A2.5 2.5 0 0117 7a2.5 2.5 0 011.5 4.3A2.5 2.5 0 0117 16a2.5 2.5 0 01-2.5 2.5z"/><line x1="12" y1="4.5" x2="12" y2="19"/></svg></span><h4>Clareza Mental</h4><p>Melhora mensurável de memória, atenção e velocidade de processamento cognitivo ao longo do programa.</p></div>
+      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"/><path d="M5 7h14"/><path d="M5 7l-2 5a3 3 0 006 0z"/><path d="M19 7l-2 5a3 3 0 006 0z"/><path d="M9 20h6"/><path d="M12 7v13"/></svg></span><h4>Equilíbrio e Marcha</h4><p>Redução do risco de quedas com protocolos específicos de equilíbrio e coordenação neuromuscular.</p></div>
+      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 119.5 4a6.5 6.5 0 0010.5 10.5z"/></svg></span><h4>Qualidade de Sono</h4><p>Melhora do padrão de sono e recuperação por meio da regulação neuroendócrina promovida pelo exercício.</p></div>
+      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-9.5A3.5 3.5 0 0112 7a3.5 3.5 0 017 3.5c0 5-7 9.5-7 9.5z"/><path d="M5 12h3l1.5-3 2 5 1.5-2h6"/></svg></span><h4>Saúde Cardiovascular</h4><p>Controle de pressão, glicemia e colesterol com exercício prescrito de acordo com o perfil clínico individual.</p></div>
+      <div class="r-card reveal"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20c0-7 5-13 14-15-1 10-6 15-14 15z"/><path d="M5 20c2-5 5-8 9-10"/></svg></span><h4>Autonomia Plena</h4><p>Envelhecer com dignidade, independência e confiança. O resultado mais importante de todo o processo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE WELLINGTON (curto - dark) -->
+<section class="about-dark about-dark-compact">
+  <div class="container">
+    <div class="about-compact-grid">
+      <div class="about-compact-photo reveal">
+        <img src="wellington-foto.jpg" alt="Wellington Brito, especialista em gerontologia" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(15%);">
+        <div class="about-photo-frame"></div>
+      </div>
+      <div class="reveal">
+        <span class="s-label">Quem conduz o programa</span>
+        <div class="about-statement">
+          <p>"O programa híbrido nasceu da observação clínica: <strong>a maioria dos resultados reais acontece entre os encontros</strong>, com o protocolo certo, prescrito por quem entende do seu perfil."</p>
+        </div>
+        <p class="about-compact-sign">Wellington Brito · Especialista em Gerontologia e Treinamento Neurofuncional</p>
+        <a href="#" onclick="showPage('home'); scrollToId('sobre'); return false;" class="about-compact-link">Conheça a trajetória completa de Wellington →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA LONGEVUS -->
+<section class="cta-final" id="longevus-consulta">
+  <span class="s-label">Dê o primeiro passo</span>
+  <h2 class="cta-final-title">Presença que transforma.<br><em>Autonomia que liberta.</em></h2>
+  <p class="cta-final-body">Uma conversa com Wellington é suficiente para entender se o programa híbrido é o que você está buscando.</p>
+  <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Tenho%20interesse%20no%20Programa%20Híbrido%20Longevus%20e%20gostaria%20de%20agendar%20minha%20avaliação%20inicial." target="_blank" class="cta-final-btn">Agendar minha avaliação inicial</a>
+  <p class="cta-note">Protocolo individualizado · Encontros mensais presenciais · Programa domiciliar estruturado</p>
+</section>
+
+<footer>
+  <div class="footer-left">
+    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
+    <div class="footer-links">
+      <a href="#" onclick="showPage('home'); return false;">Início</a>
+      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
+      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
+    </div>
+  </div>
+  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
+</footer>
+
+</div><!-- /page-longevus -->
+
+<!-- ══════════════════════════════════════ -->
+<!--  PÁGINA BLOG                          -->
+<!-- ══════════════════════════════════════ -->
+<div class="page" id="page-blog">
+
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <span class="s-label">Conteúdo gratuito</span>
+    <h1 class="s-title" style="font-size:clamp(2.8rem,5vw,4.2rem);">Envelhecer bem<br>começa com <em>informação</em></h1>
+    <p class="s-body" style="max-width:480px;margin-top:12px;">Artigos sobre treinamento neurofuncional, longevidade ativa, saúde do adulto 50+ e tudo que você precisa saber para envelhecer com autonomia.</p>
+  </div>
+</div>
+
+<section style="padding:0; background:var(--white);">
+  <div class="blog-grid">
+    <a href="#" onclick="showPage('artigo-quedas'); return false;" class="blog-card">
+      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"/><path d="M5 7h14"/><path d="M5 7l-2 5a3 3 0 006 0z"/><path d="M19 7l-2 5a3 3 0 006 0z"/><path d="M9 20h6"/><path d="M12 7v13"/></svg></div></div>
+      <div class="blog-card-body">
+        <span class="blog-cat">Equilíbrio e Prevenção</span>
+        <h3>Por que o risco de queda aumenta após os 60 anos e o que fazer a respeito</h3>
+        <p>As quedas são a principal causa de hospitalização em idosos. Entenda a fisiologia por trás disso e os exercícios que realmente funcionam para prevenir.</p>
+        <div class="blog-meta"><span class="blog-read">8 min de leitura</span></div>
+      </div>
+    </a>
+    <a href="#" onclick="showPage('artigo-memoria'); return false;" class="blog-card">
+      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 4.5a2.5 2.5 0 00-2.5 2.5 2.5 2.5 0 00-1.5 4.3A2.5 2.5 0 007 16a2.5 2.5 0 002.5 2.5z"/><path d="M14.5 4.5A2.5 2.5 0 0117 7a2.5 2.5 0 011.5 4.3A2.5 2.5 0 0117 16a2.5 2.5 0 01-2.5 2.5z"/><line x1="12" y1="4.5" x2="12" y2="19"/></svg></div></div>
+      <div class="blog-card-body">
+        <span class="blog-cat">Neurociência</span>
+        <h3>Como o exercício físico protege a memória: o que a ciência já comprovou</h3>
+        <p>Estudos mostram que o exercício é um dos mais potentes neuroprotetores disponíveis. Veja quais tipos de treino têm maior impacto cognitivo depois dos 50.</p>
+        <div class="blog-meta"><span class="blog-read">10 min de leitura</span></div>
+      </div>
+    </a>
+    <a href="#" onclick="showPage('artigo-casa'); return false;" class="blog-card">
+      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9.5 20v-5.5h5V20"/></svg></div></div>
+      <div class="blog-card-body">
+        <span class="blog-cat">Treino em Casa</span>
+        <h3>5 exercícios seguros para fazer em casa depois dos 50 sem equipamento</h3>
+        <p>Sem precisar de academia ou equipamentos, esses movimentos trabalham força, equilíbrio e coordenação, adaptados para quem tem comorbidades.</p>
+        <div class="blog-meta"><span class="blog-read">6 min de leitura</span></div>
+      </div>
+    </a>
+    <a href="#" onclick="showPage('artigo-comorbidades'); return false;" class="blog-card">
+      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-9.5A3.5 3.5 0 0112 7a3.5 3.5 0 017 3.5c0 5-7 9.5-7 9.5z"/><path d="M5 12h3l1.5-3 2 5 1.5-2h6"/></svg></div></div>
+      <div class="blog-card-body">
+        <span class="blog-cat">Saúde e Dor Crônica</span>
+        <h3>Artrose, hipertensão e diabetes: quando e como treinar com segurança</h3>
+        <p>Ter comorbidades não é motivo para não se exercitar. É motivo para se exercitar com prescrição adequada. Entenda as diretrizes atuais para cada condição.</p>
+        <div class="blog-meta"><span class="blog-read">12 min de leitura</span></div>
+      </div>
+    </a>
+    <a href="#" onclick="showPage('artigo-sarcopenia'); return false;" class="blog-card">
+      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 7v10"/><path d="M17.5 7v10"/><line x1="6.5" y1="12" x2="17.5" y2="12"/><path d="M3.5 9.5v5"/><path d="M20.5 9.5v5"/></svg></div></div>
+      <div class="blog-card-body">
+        <span class="blog-cat">Força e Longevidade</span>
+        <h3>Sarcopenia: a perda muscular silenciosa que rouba sua autonomia</h3>
+        <p>A partir dos 50 anos, podemos perder até 1% de massa muscular por ano. Saiba o que é sarcopenia, por que isso importa e como reverter o processo.</p>
+        <div class="blog-meta"><span class="blog-read">9 min de leitura</span></div>
+      </div>
+    </a>
+    <a href="#" onclick="showPage('artigo-consistencia'); return false;" class="blog-card">
+      <div class="blog-card-img"><div class="blog-card-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="1.5"/><path d="M9 4V3a3 3 0 016 0v1"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/></svg></div></div>
+      <div class="blog-card-body">
+        <span class="blog-cat">Comportamento e Hábitos</span>
+        <h3>Por que adultos 50+ abandonam o treino e o que realmente mantém a consistência</h3>
+        <p>A falta de consistência raramente é preguiça. É falta de método. Entenda os fatores psicológicos e fisiológicos que determinam a aderência ao exercício nessa fase da vida.</p>
+        <div class="blog-meta"><span class="blog-read">7 min de leitura</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="blog-cta">
+  <span class="s-label" style="color:var(--rust-light);">Quer receber conteúdo novo?</span>
+  <h2 class="s-title" style="color:var(--white);font-size:2.4rem;">Receba artigos diretamente<br>no seu <em style="color:var(--rust-light);">WhatsApp</em></h2>
+  <p>Sem spam. Apenas conteúdo útil sobre envelhecimento ativo, treinamento funcional e saúde do adulto 50+, publicado com regularidade.</p>
+  <a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Gostaria%20de%20receber%20seus%20artigos%20sobre%20treino%20para%20adultos%2050%2B." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:360px;">Quero receber os artigos</a>
+</div>
+
+<footer>
+  <div class="footer-left">
+    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
+    <div class="footer-links">
+      <a href="#" onclick="showPage('home'); return false;">Início</a>
+      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
+      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
+    </div>
+  </div>
+  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
+</footer>
+
+</div><!-- /page-blog -->
+
+
+<!-- ARTIGO: quedas -->
+<div class="page" id="page-artigo-quedas">
+  <article class="article">
+    <div class="article-hero">
+      <div class="article-hero-inner">
+        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
+        <span class="article-cat">Equilíbrio e Prevenção</span>
+        <h1 class="article-title">Por que o risco de queda aumenta após os 60 anos e o que fazer a respeito</h1>
+        <p class="article-sub">As quedas são uma das principais causas de hospitalização e perda de autonomia em pessoas acima de 60 anos. A boa notícia: a maioria pode ser evitada.</p>
+        <div class="article-meta">
+          <span class="article-author">Por Wellington Brito</span>
+          <span class="article-readtime">8 min de leitura</span>
+        </div>
+      </div>
+    </div>
+    <div class="article-body">
+      <p>Toda semana eu converso com alguém que me diz a mesma frase: "Wellington, eu nunca caí, mas ando com medo de cair." Esse medo não é bobagem. Ele tem fundamento fisiológico, e ignorá-lo é um erro. Mas viver refém dele também é.</p>
+
+<p>Depois de mais de 15 anos trabalhando com adultos acima de 50 anos, aprendi que a queda quase nunca é um acidente isolado. Ela é o ponto final de um processo que vinha acontecendo silenciosamente, às vezes por anos. E é exatamente por isso que ela pode ser prevenida.</p>
+
+<h2>O que realmente acontece com o corpo</h2>
+
+<p>A partir dos 60 anos, três sistemas que nos mantêm de pé começam a perder eficiência ao mesmo tempo: a força muscular (principalmente das pernas), o equilíbrio e a velocidade de reação. Quando você tropeça aos 30 anos, seu corpo corrige a postura numa fração de segundo. Aos 65, essa correção é mais lenta, e a força para se segurar pode não estar mais lá.</p>
+
+<p>Os dados confirmam a gravidade do problema. As quedas estão entre as principais causas de internação hospitalar na população idosa, e o preditor mais consistente de uma queda futura é, justamente, uma queda anterior. Ou seja: a primeira queda aumenta drasticamente o risco da segunda. Por isso a prevenção precisa começar antes da primeira acontecer.</p>
+
+<h2>A maioria das quedas acontece dentro de casa</h2>
+
+<p>Isso surpreende muita gente, mas faz todo sentido. É em casa que passamos a maior parte do tempo e onde baixamos a guarda. Tapetes soltos, iluminação fraca, falta de barras de apoio no banheiro e fios pelo chão são responsáveis por uma parcela enorme dos acidentes.</p>
+
+<p>A primeira coisa que eu sempre oriento é fazer um pente-fino na casa: prender ou remover tapetes, melhorar a iluminação dos corredores e da escada, instalar barras de apoio no banheiro e manter os caminhos livres. É barato, é rápido e elimina boa parte do risco imediato.</p>
+
+<h2>Mas o ambiente seguro não basta</h2>
+
+<p>Organizar a casa reduz o risco, mas não ataca a causa de fundo: o corpo que perdeu força e equilíbrio. É aqui que o treinamento entra, e a ciência é muito clara sobre isso. Programas de exercício que combinam fortalecimento das pernas e treino de equilíbrio reduzem significativamente o número de quedas. Não é opinião, é resultado de ensaios clínicos.</p>
+
+<p>O que funciona, na prática, é trabalhar:</p>
+
+<ul>
+<li><strong>Força de membros inferiores:</strong> exercícios como levantar e sentar da cadeira, agachamentos adaptados e subir degraus fortalecem exatamente a musculatura que segura o corpo numa pisada em falso.</li>
+<li><strong>Equilíbrio estático e dinâmico:</strong> ficar em apoio unipodal (um pé só) com segurança, caminhar em linha, mudar de direção. São estímulos que reeducam o sistema de equilíbrio.</li>
+<li><strong>Velocidade de reação:</strong> exercícios que desafiam o corpo a responder rápido a um estímulo, sempre dentro de um ambiente controlado e seguro.</li>
+</ul>
+
+<h2>O papel do estímulo cognitivo</h2>
+
+<p>Um ponto que poucos consideram: muitas quedas acontecem quando a pessoa está fazendo duas coisas ao mesmo tempo, como caminhar e conversar, ou andar enquanto pensa em outra coisa. Isso se chama dupla tarefa, e treinar o corpo e a mente juntos melhora a capacidade de manter o equilíbrio mesmo distraído. É um dos pilares do trabalho neurofuncional que aplico com meus alunos.</p>
+
+<h2>Nunca é tarde para começar</h2>
+
+<p>Se tem uma mensagem que eu gostaria que você levasse deste texto é esta: a perda de força e equilíbrio não é uma sentença. O corpo responde ao estímulo em qualquer idade. Já acompanhei alunos na faixa dos 70 anos que recuperaram a confiança de subir escada, carregar o neto e sair de casa sem medo. O caminho é treino com método, progressão segura e acompanhamento de quem entende do perfil de cada um.</p>
+
+<p>O medo de cair não precisa governar a sua vida. Ele pode ser, na verdade, o sinal de alerta que te leva a agir antes que o pior aconteça.</p>
+    </div>
+    <div class="article-cta">
+      <div class="article-cta-inner">
+        <span class="s-label">Gostou do conteúdo?</span>
+        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
+        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
+        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%22Por%20que%20o%20risco%20de%20queda%20aumenta%20ap%C3%B3s%20os%2060%20anos%20e%20o%20que%20fazer%20a%20respeito%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
+        <div style="margin-top:18px;">
+          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer>
+  <div class="footer-left">
+    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
+    <div class="footer-links">
+      <a href="#" onclick="showPage('home'); return false;">Início</a>
+      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
+      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
+    </div>
+  </div>
+  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
+</footer>
+</div><!-- /page-artigo-quedas -->
+
+<!-- ARTIGO: memoria -->
+<div class="page" id="page-artigo-memoria">
+  <article class="article">
+    <div class="article-hero">
+      <div class="article-hero-inner">
+        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
+        <span class="article-cat">Neurociência</span>
+        <h1 class="article-title">Como o exercício físico protege a memória: o que a ciência já comprovou</h1>
+        <p class="article-sub">O exercício não fortalece só os músculos. Ele é um dos mais potentes protetores do cérebro que conhecemos, e os efeitos sobre a memória são mensuráveis.</p>
+        <div class="article-meta">
+          <span class="article-author">Por Wellington Brito</span>
+          <span class="article-readtime">10 min de leitura</span>
+        </div>
+      </div>
+    </div>
+    <div class="article-body">
+      <p>Quando explico para um aluno que o treino que fazemos também está cuidando da memória dele, costumo ver um misto de surpresa e desconfiança. Parece bom demais para ser verdade. Mas é verdade, e a ciência sustenta isso de forma cada vez mais sólida.</p>
+
+<p>Durante muito tempo se acreditou que o cérebro adulto era uma estrutura fixa, que só perdia neurônios com o passar dos anos. Hoje sabemos que isso está errado. O cérebro continua se modificando, criando novas conexões e até gerando novos neurônios ao longo da vida. E um dos principais gatilhos desse processo é o movimento.</p>
+
+<h2>O elo entre as pernas e o cérebro</h2>
+
+<p>Existe uma região do cérebro chamada hipocampo, profundamente envolvida na formação de memórias e no aprendizado. É uma das primeiras áreas afetadas no envelhecimento e em doenças como o Alzheimer. O que os estudos de neuroimagem vêm mostrando é notável: pessoas que se exercitam regularmente apresentam maior volume do hipocampo do que pessoas sedentárias da mesma idade.</p>
+
+<p>Em outras palavras, o exercício parece literalmente preservar a estrutura física da região responsável pela sua memória. Revisões de estudos recentes com idosos mostram aumento do volume hipocampal, melhor integração das conexões neurais e maior metabolismo nas regiões cognitivas após programas de exercício.</p>
+
+<h2>Por que isso acontece</h2>
+
+<p>O mecanismo mais estudado envolve uma molécula chamada BDNF, um fator que estimula o crescimento e a sobrevivência dos neurônios. Pense nele como um adubo para o cérebro. Quando nos exercitamos, os níveis de BDNF aumentam, favorecendo a neuroplasticidade, que é a capacidade do cérebro de se reorganizar e formar novas conexões.</p>
+
+<p>Além disso, o exercício melhora a circulação sanguínea cerebral, reduz a inflamação crônica e ajuda a regular o sono, três fatores que têm impacto direto na saúde cognitiva.</p>
+
+<h2>Que tipo de exercício funciona melhor</h2>
+
+<p>Essa é a pergunta que sempre recebo, e a resposta agrada: os dois principais tipos de treino ajudam, e juntos funcionam ainda melhor.</p>
+
+<ul>
+<li><strong>Exercício aeróbico</strong> (caminhada vigorosa, bicicleta, natação) tem efeito consistente sobre memória e atenção. Os estudos sugerem que o benefício é dose-dependente, ou seja, quanto mais regular a prática, maior o efeito, dentro de limites saudáveis.</li>
+<li><strong>Treinamento de força</strong> complementa esses benefícios. Pesquisas recentes mostram que o treino resistido também impacta positivamente as regiões do cérebro ligadas à cognição, especialmente em pessoas com risco de comprometimento cognitivo.</li>
+</ul>
+
+<p>Há ainda uma recomendação geral de algo em torno de 120 a 150 minutos de exercício moderado por semana para benefícios cognitivos, embora cada pessoa precise de uma dose ajustada ao seu perfil.</p>
+
+<h2>O diferencial do trabalho neurofuncional</h2>
+
+<p>No meu trabalho, eu vou um passo além do exercício tradicional. Combino o estímulo físico com desafios cognitivos durante o próprio treino: memória de trabalho, atenção dividida, tempo de reação. Quando você precisa coordenar um movimento enquanto resolve um pequeno desafio mental, está treinando corpo e cérebro de forma integrada, exatamente como eles funcionam na vida real.</p>
+
+<p>Essa abordagem potencializa os ganhos cognitivos porque não trabalha o cérebro como um espectador do exercício, mas como participante ativo dele.</p>
+
+<h2>A mensagem que importa</h2>
+
+<p>Cuidar do corpo depois dos 50 nunca foi só uma questão de estética ou de força. É uma das decisões mais inteligentes que você pode tomar pela sua mente. Cada sessão de treino é um depósito na sua reserva cognitiva, um investimento na sua capacidade de continuar lúcido, independente e presente nos anos que virão.</p>
+
+<p>Não existe pílula que faça pelo seu cérebro o que o movimento faz. E nunca é tarde para começar.</p>
+    </div>
+    <div class="article-cta">
+      <div class="article-cta-inner">
+        <span class="s-label">Gostou do conteúdo?</span>
+        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
+        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
+        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%22Como%20o%20exerc%C3%ADcio%20f%C3%ADsico%20protege%20a%20mem%C3%B3ria%3A%20o%20que%20a%20ci%C3%AAncia%20j%C3%A1%20comprovou%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
+        <div style="margin-top:18px;">
+          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer>
+  <div class="footer-left">
+    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
+    <div class="footer-links">
+      <a href="#" onclick="showPage('home'); return false;">Início</a>
+      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
+      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
+    </div>
+  </div>
+  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
+</footer>
+</div><!-- /page-artigo-memoria -->
+
+<!-- ARTIGO: casa -->
+<div class="page" id="page-artigo-casa">
+  <article class="article">
+    <div class="article-hero">
+      <div class="article-hero-inner">
+        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
+        <span class="article-cat">Treino em Casa</span>
+        <h1 class="article-title">5 exercícios seguros para fazer em casa depois dos 50 sem equipamento</h1>
+        <p class="article-sub">Você não precisa de academia nem de equipamentos para começar a fortalecer o corpo. Estes cinco movimentos trabalham força, equilíbrio e coordenação com segurança.</p>
+        <div class="article-meta">
+          <span class="article-author">Por Wellington Brito</span>
+          <span class="article-readtime">6 min de leitura</span>
+        </div>
+      </div>
+    </div>
+    <div class="article-body">
+      <p>Uma das coisas que mais ouço é: "Wellington, eu não tenho tempo de ir à academia todo dia." E está tudo bem. A verdade é que boa parte do trabalho que protege a sua autonomia pode ser feita em casa, com o próprio peso do corpo e alguns minutos por dia.</p>
+
+<p>Antes de listar os exercícios, um aviso importante: o que vou descrever aqui são movimentos de baixo risco para a maioria das pessoas, mas cada corpo é único. Se você tem alguma condição clínica, dor ativa ou limitação, o ideal é ter uma avaliação profissional antes de começar. Considere isto um ponto de partida, não uma prescrição individual.</p>
+
+<h2>1. Levantar e sentar da cadeira</h2>
+
+<p>Esse é, talvez, o exercício mais importante desta lista. Sente-se numa cadeira firme e levante-se sem usar as mãos, se conseguir. Depois sente de volta, controlando a descida. Esse movimento fortalece exatamente a musculatura das pernas que você usa para se levantar do sofá, do vaso sanitário e do carro.</p>
+
+<p>Comece com 2 séries de 8 a 10 repetições. Se precisar usar as mãos no apoio no início, tudo bem, o importante é a constância. Mantenha uma cadeira ou parede por perto para segurança.</p>
+
+<h2>2. Apoio em um pé só (equilíbrio)</h2>
+
+<p>Fique de pé atrás de uma cadeira, segurando o encosto. Levante levemente um pé do chão e tente se equilibrar no outro por alguns segundos. Troque de perna. Esse exercício reeduca o seu sistema de equilíbrio, que é uma das principais defesas contra quedas.</p>
+
+<p>Comece segurando firme na cadeira. Com o tempo, tente apenas encostar os dedos. O objetivo, lá na frente, é conseguir se equilibrar com segurança sem apoio, mas sempre com algo por perto.</p>
+
+<h2>3. Elevação de panturrilha</h2>
+
+<p>De pé, apoiando as mãos numa cadeira ou bancada, fique na ponta dos pés e desça devagar. As panturrilhas são fundamentais para a marcha e para o impulso ao caminhar, e costumam ser esquecidas. Faça 2 séries de 10 a 12 repetições.</p>
+
+<h2>4. Marcha estacionária</h2>
+
+<p>Em pé, num lugar seguro, simule uma caminhada erguendo os joelhos alternadamente, como se marchasse no lugar. Esse exercício trabalha coordenação, ativa o coração e estimula o equilíbrio dinâmico. Se sentir segurança, pode soltar o apoio. Faça por 30 a 60 segundos, descanse, e repita.</p>
+
+<h2>5. Movimento de alcançar (mobilidade)</h2>
+
+<p>Sentado ou em pé com apoio, estenda os braços para frente, para os lados e para cima, como se fosse pegar algo numa prateleira alta. Esse trabalho mantém a mobilidade dos ombros e a amplitude de movimento que você usa para se vestir, pentear o cabelo e pegar objetos no alto.</p>
+
+<h2>Como montar sua rotina</h2>
+
+<p>Não tente fazer tudo de forma intensa no primeiro dia. O segredo do treino para a nossa faixa não é intensidade, é consistência e progressão. Comece devagar, 3 vezes por semana, e vá aumentando à medida que o corpo responde.</p>
+
+<p>Um detalhe que faz diferença: faça os exercícios com atenção plena no movimento, sem pressa. Qualidade vale muito mais do que quantidade aqui.</p>
+
+<h2>Quando buscar acompanhamento</h2>
+
+<p>Esses exercícios são um excelente começo, mas eles são genéricos por natureza, foram pensados para "a maioria das pessoas". O seu corpo, com a sua história, as suas dores e os seus objetivos, merece um programa feito para ele. É exatamente isso que faço no acompanhamento individual e no programa Longevus: transformo princípios gerais como esses em um protocolo seguro e progressivo, desenhado para você.</p>
+
+<p>Mas se hoje o que você consegue fazer é começar por aqui, comece. Seu corpo daqui a seis meses vai agradecer.</p>
+    </div>
+    <div class="article-cta">
+      <div class="article-cta-inner">
+        <span class="s-label">Gostou do conteúdo?</span>
+        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
+        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
+        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%225%20exerc%C3%ADcios%20seguros%20para%20fazer%20em%20casa%20depois%20dos%2050%20sem%20equipamento%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
+        <div style="margin-top:18px;">
+          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer>
+  <div class="footer-left">
+    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
+    <div class="footer-links">
+      <a href="#" onclick="showPage('home'); return false;">Início</a>
+      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
+      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
+    </div>
+  </div>
+  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
+</footer>
+</div><!-- /page-artigo-casa -->
+
+<!-- ARTIGO: comorbidades -->
+<div class="page" id="page-artigo-comorbidades">
+  <article class="article">
+    <div class="article-hero">
+      <div class="article-hero-inner">
+        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
+        <span class="article-cat">Saúde e Dor Crônica</span>
+        <h1 class="article-title">Artrose, hipertensão e diabetes: quando e como treinar com segurança</h1>
+        <p class="article-sub">Ter uma condição crônica não é motivo para parar de se exercitar. É motivo para se exercitar do jeito certo, com prescrição adequada ao seu quadro.</p>
+        <div class="article-meta">
+          <span class="article-author">Por Wellington Brito</span>
+          <span class="article-readtime">12 min de leitura</span>
+        </div>
+      </div>
+    </div>
+    <div class="article-body">
+      <p>"Wellington, mas eu posso treinar mesmo com a minha pressão alta?" Essa é provavelmente a pergunta que mais escuto. E a resposta, na imensa maioria dos casos, é não apenas que pode, mas que deve, desde que seja com orientação adequada.</p>
+
+<p>Existe um mito perigoso de que, depois de certa idade ou com certas condições, o melhor é "pegar leve" e evitar esforço. Na prática, o sedentarismo costuma ser mais perigoso do que o exercício bem prescrito. O que muda não é "se" você deve se exercitar, mas "como".</p>
+
+<h2>Artrose: movimento é remédio</h2>
+
+<p>Parece contraintuitivo, mas a artrose melhora com movimento adequado, não com repouso. A articulação que não se move enfraquece a musculatura ao redor, e é justamente essa musculatura que protege e estabiliza a articulação. O resultado do repouso prolongado costuma ser mais dor, não menos.</p>
+
+<p>O caminho aqui é o fortalecimento da musculatura que envolve a articulação afetada, respeitando a dor e evitando o impacto excessivo. Para um joelho com artrose, por exemplo, fortalecer a coxa de forma controlada costuma trazer alívio significativo. O segredo é a dosagem certa: estímulo suficiente para fortalecer, sem sobrecarregar a articulação já sensível.</p>
+
+<h2>Hipertensão: o exercício como aliado da pressão</h2>
+
+<p>O exercício regular é uma das ferramentas mais eficazes para o controle da pressão arterial. A atividade física ajuda a manter os vasos mais saudáveis e contribui para reduzir os níveis de pressão ao longo do tempo.</p>
+
+<p>Os cuidados existem e são importantes: evitar prender a respiração durante o esforço (uma manobra que eleva a pressão de forma abrupta), priorizar uma progressão gradual e monitorar como o corpo responde. Quem tem hipertensão se beneficia muito de um trabalho que combina exercício aeróbico e fortalecimento, mas a intensidade precisa ser calibrada individualmente. Por isso eu sempre quero saber quais medicamentos a pessoa usa e como está o controle da pressão antes de montar o programa.</p>
+
+<h2>Diabetes: o músculo que regula o açúcar</h2>
+
+<p>Poucas pessoas sabem disso, mas o músculo é um dos principais consumidores de glicose do corpo. Quando você se exercita, a musculatura capta açúcar do sangue, ajudando a controlar a glicemia. Por isso o exercício é parte central do manejo do diabetes tipo 2.</p>
+
+<p>O fortalecimento muscular tem um papel especial aqui: mais massa muscular significa mais capacidade de regular o açúcar no sangue ao longo do dia. Combinado com atividade aeróbica, o efeito é ainda melhor. Os cuidados envolvem atenção a episódios de hipoglicemia, hidratação e atenção especial aos pés, que merecem cuidado redobrado em quem tem diabetes.</p>
+
+<h2>O ponto em comum: prescrição individual</h2>
+
+<p>Você deve ter percebido um padrão nos três casos: o exercício ajuda, mas a forma certa de fazê-lo depende do seu quadro específico. Não existe receita única. A pessoa com artrose no joelho, hipertensão controlada e princípio de diabetes precisa de um programa que considere as três coisas ao mesmo tempo, e isso é exatamente o oposto do treino genérico de academia.</p>
+
+<p>É por isso que, no meu trabalho, a primeira etapa é sempre uma avaliação detalhada: histórico de saúde, condições clínicas, medicamentos em uso, limitações e objetivos. Sem essa base, qualquer programa é um chute, e chute com o corpo de alguém é coisa que eu não faço.</p>
+
+<h2>Uma palavra sobre segurança</h2>
+
+<p>Se você tem alguma condição crônica, dois cuidados são inegociáveis. Primeiro: tenha acompanhamento médico em dia e, idealmente, a liberação do seu médico para iniciar um programa de exercícios. Segundo: treine com quem entende de prescrição para o seu perfil, e não apenas de treino genérico.</p>
+
+<p>A combinação certa, profissional de saúde acompanhando a condição e profissional de exercício prescrevendo o treino certo, é o que transforma uma condição crônica de obstáculo em algo perfeitamente administrável. Já vi muita gente recuperar qualidade de vida que achava perdida, simplesmente porque parou de ter medo de se mexer e começou a se mexer do jeito certo.</p>
+    </div>
+    <div class="article-cta">
+      <div class="article-cta-inner">
+        <span class="s-label">Gostou do conteúdo?</span>
+        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
+        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
+        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%22Artrose%2C%20hipertens%C3%A3o%20e%20diabetes%3A%20quando%20e%20como%20treinar%20com%20seguran%C3%A7a%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
+        <div style="margin-top:18px;">
+          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer>
+  <div class="footer-left">
+    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
+    <div class="footer-links">
+      <a href="#" onclick="showPage('home'); return false;">Início</a>
+      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
+      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
+    </div>
+  </div>
+  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
+</footer>
+</div><!-- /page-artigo-comorbidades -->
+
+<!-- ARTIGO: sarcopenia -->
+<div class="page" id="page-artigo-sarcopenia">
+  <article class="article">
+    <div class="article-hero">
+      <div class="article-hero-inner">
+        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
+        <span class="article-cat">Força e Longevidade</span>
+        <h1 class="article-title">Sarcopenia: a perda muscular silenciosa que rouba sua autonomia</h1>
+        <p class="article-sub">A partir dos 50 anos, perdemos massa muscular de forma progressiva. Entender esse processo e agir sobre ele é uma das chaves para envelhecer com independência.</p>
+        <div class="article-meta">
+          <span class="article-author">Por Wellington Brito</span>
+          <span class="article-readtime">9 min de leitura</span>
+        </div>
+      </div>
+    </div>
+    <div class="article-body">
+      <p>Tem uma perda que acontece tão devagar que quase ninguém percebe até ela cobrar a conta: a perda de massa e força muscular com o passar dos anos. O nome técnico é sarcopenia, e ela é uma das principais responsáveis pela perda de autonomia na terceira idade. A boa notícia é que ela responde muito bem ao tratamento certo.</p>
+
+<h2>O que é sarcopenia, na prática</h2>
+
+<p>Sarcopenia é a perda progressiva de massa muscular associada à diminuição da força e da capacidade de realizar movimentos do dia a dia. Não é só uma questão de "ficar mais magro" ou "mais fraco". É uma condição que aumenta o risco de quedas, fraturas, perda de independência e está associada a piora geral da saúde.</p>
+
+<p>Estima-se que a sarcopenia afete uma parcela significativa da população acima de 60 anos. E o mais importante de entender: normalmente a perda de força vem primeiro, seguida pela perda de massa muscular. Ou seja, quando você nota que está mais difícil abrir um pote ou levantar do chão, o processo já está em andamento.</p>
+
+<h2>A linha do tempo da perda</h2>
+
+<p>A força muscular atinge seu pico por volta dos 30 anos e se mantém razoavelmente preservada até os 50. A partir daí, começa um declínio que se acelera depois dos 60. Em algumas faixas etárias mais avançadas, a redução de força pode chegar a percentuais bastante expressivos.</p>
+
+<p>Parece assustador, mas aqui está o ponto que muda tudo: esse processo não é uma via de mão única. O corpo humano mantém a capacidade de ganhar força e massa muscular em qualquer idade, desde que receba o estímulo certo.</p>
+
+<h2>O que reverte o processo</h2>
+
+<p>Se existe um consenso na ciência sobre sarcopenia, é este: o treinamento de força (também chamado de exercício resistido) é a intervenção mais eficaz para prevenir e tratar a perda muscular. Revisões sistemáticas e meta-análises são consistentes nesse ponto.</p>
+
+<p>Os estudos mostram que idosos que fazem treino de força de forma regular apresentam melhora mensurável na força muscular, ganho de massa e melhor desempenho em testes funcionais, aqueles que medem coisas práticas como levantar de uma cadeira e velocidade de caminhada. Em muitos casos, os benefícios vão além do músculo: pesquisas observaram também redução de processos inflamatórios e melhora na qualidade do sono.</p>
+
+<h2>Como deve ser esse treino</h2>
+
+<p>Treino de força para quem tem ou quer prevenir sarcopenia não significa pegar peso pesado de qualquer jeito. Significa um trabalho progressivo e bem dosado. Nos estudos que mostram bons resultados, o padrão costuma ser:</p>
+
+<ul>
+<li>Frequência de cerca de 2 a 3 vezes por semana;</li>
+<li>Vários exercícios cobrindo os principais grupos musculares, com atenção especial às pernas;</li>
+<li>Progressão gradual da carga, começando leve e aumentando conforme o corpo se adapta;</li>
+<li>Execução controlada, com técnica correta, priorizando a segurança.</li>
+</ul>
+
+<p>A palavra-chave é progressão. O músculo só se fortalece se for desafiado de forma crescente, mas esse desafio precisa respeitar o ponto de partida de cada pessoa.</p>
+
+<h2>A nutrição também conta</h2>
+
+<p>Não dá para falar de sarcopenia sem mencionar a proteína. O músculo precisa de matéria-prima para se reconstruir, e muitos adultos mais velhos consomem proteína abaixo do ideal. O treino de força combinado com uma ingestão adequada de proteína é a dupla mais eficaz. A orientação nutricional específica deve vir de um nutricionista, mas é importante que você saiba que treino e alimentação andam juntos aqui.</p>
+
+<h2>Por que isso é uma questão de autonomia</h2>
+
+<p>No fim das contas, sarcopenia não é sobre estética. É sobre conseguir carregar as compras, brincar com os netos, levantar do chão sozinho, subir a escada de casa, viver sem depender dos outros para as tarefas básicas. A força muscular é, literalmente, a moeda da independência na terceira idade.</p>
+
+<p>Quando trabalho com um aluno, o objetivo nunca é "ficar forte" por vaidade. É preservar a capacidade de viver a vida do jeito dele, com dignidade e sem medo. E a ciência é clara: começar a treinar a força, mesmo depois dos 60, 70 anos, faz diferença real. O melhor momento para começar foi há vinte anos. O segundo melhor momento é hoje.</p>
+    </div>
+    <div class="article-cta">
+      <div class="article-cta-inner">
+        <span class="s-label">Gostou do conteúdo?</span>
+        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
+        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
+        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%22Sarcopenia%3A%20a%20perda%20muscular%20silenciosa%20que%20rouba%20sua%20autonomia%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
+        <div style="margin-top:18px;">
+          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer>
+  <div class="footer-left">
+    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
+    <div class="footer-links">
+      <a href="#" onclick="showPage('home'); return false;">Início</a>
+      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
+      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
+    </div>
+  </div>
+  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
+</footer>
+</div><!-- /page-artigo-sarcopenia -->
+
+<!-- ARTIGO: consistencia -->
+<div class="page" id="page-artigo-consistencia">
+  <article class="article">
+    <div class="article-hero">
+      <div class="article-hero-inner">
+        <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Voltar ao blog</a>
+        <span class="article-cat">Comportamento e Hábitos</span>
+        <h1 class="article-title">Por que adultos 50+ abandonam o treino e o que realmente mantém a consistência</h1>
+        <p class="article-sub">A falta de consistência raramente é preguiça. Quase sempre é falta de método, de adaptação e de um motivo forte o suficiente. Vamos falar honestamente sobre isso.</p>
+        <div class="article-meta">
+          <span class="article-author">Por Wellington Brito</span>
+          <span class="article-readtime">7 min de leitura</span>
+        </div>
+      </div>
+    </div>
+    <div class="article-body">
+      <p>Deixa eu começar com uma frase que costumo dizer logo na primeira conversa: o maior erro depois dos 50 não é a falta de treino. É treinar sem planejamento. E o segundo maior erro é desistir achando que o problema é você, quando na verdade o problema era o método.</p>
+
+<p>Ao longo dos anos, vi muita gente chegar até mim depois de várias tentativas frustradas de "voltar a se exercitar". Quase sempre carregando uma culpa: "eu não tenho disciplina", "eu sou preguiçoso", "eu começo e paro". Na imensa maioria das vezes, não era nada disso.</p>
+
+<h2>Por que as pessoas realmente abandonam</h2>
+
+<p>Quando investigo o histórico de quem desistiu, alguns padrões se repetem:</p>
+
+<ul>
+<li><strong>O treino era genérico demais.</strong> A pessoa entrou numa academia, recebeu uma ficha padrão pensada para alguém de 25 anos e, naturalmente, sentiu dor, desânimo ou simplesmente não viu sentido.</li>
+<li><strong>A intensidade foi errada.</strong> Ou pesado demais, gerando dor e medo, ou leve demais, sem gerar resultado nem motivação.</li>
+<li><strong>Faltou acompanhamento.</strong> Ninguém ajustou o programa, ninguém tirou dúvidas, ninguém celebrou os progressos. A pessoa ficou sozinha.</li>
+<li><strong>O objetivo não era claro.</strong> "Emagrecer" ou "ficar em forma" são metas vagas demais para sustentar a constância nos dias difíceis.</li>
+</ul>
+
+<p>Repare: nenhum desses motivos é "preguiça". São falhas de método e de abordagem. E todas têm solução.</p>
+
+<h2>O que a ciência diz sobre aderência</h2>
+
+<p>Há um achado importante nas pesquisas sobre exercício para idosos: a abordagem personalizada, mesmo quando feita em grupo, melhora muito a chance de a pessoa aderir e continuar no programa a longo prazo. Ou seja, quando o treino é pensado para o indivíduo, considerando seus valores, sua rotina e suas preferências, a probabilidade de manter aumenta significativamente.</p>
+
+<p>As pesquisas também mostram que muitos adultos mais velhos preferem exercícios que possam fazer em casa, com alguma orientação profissional. Forçar alguém para um modelo que não combina com a vida dela é receita para a desistência.</p>
+
+<h2>O que realmente mantém a consistência</h2>
+
+<p>Na minha experiência, alguns elementos fazem toda a diferença entre quem mantém e quem desiste:</p>
+
+<p><strong>Um programa que cabe na sua vida.</strong> De nada adianta um plano perfeito que exige cinco dias na academia se você só consegue três, ou se prefere treinar em casa. O melhor treino é aquele que você consegue sustentar. Foi pensando nisso que estruturei o programa híbrido Longevus, combinando encontros presenciais com prática domiciliar.</p>
+
+<p><strong>Progressão visível.</strong> Quando você percebe que está levantando da cadeira com mais facilidade, subindo a escada sem se cansar, dormindo melhor, isso vira combustível. Resultado concreto alimenta motivação.</p>
+
+<p><strong>Acompanhamento próximo.</strong> Ter alguém que ajusta o programa, responde dúvidas e está presente na jornada muda completamente a experiência. Você não está sozinho tentando adivinhar se está fazendo certo.</p>
+
+<p><strong>Um porquê forte.</strong> "Quero conseguir brincar com meus netos no chão e levantar sem ajuda" é um motivo que sustenta a constância muito mais do que "quero emagrecer". Quando o objetivo se conecta com a sua vida real, os dias difíceis ficam mais fáceis de atravessar.</p>
+
+<h2>Constância vence intensidade</h2>
+
+<p>Se eu pudesse deixar uma única ideia com você, seria esta: para a nossa faixa etária, treinar com constância moderada vence, de longe, treinar com intensidade esporádica. Três sessões bem feitas por semana, mantidas por meses e anos, transformam um corpo. Já uma semana puxada seguida de um mês parado não leva a lugar nenhum, exceto à frustração.</p>
+
+<p>Se você já tentou e desistiu antes, não se culpe. Provavelmente faltou o método certo, a adaptação certa e o acompanhamento certo. A boa notícia é que isso tudo pode ser construído. E o seu corpo, mesmo depois dos 50, está pronto para responder no momento em que você encontrar o caminho que funciona para você.</p>
+    </div>
+    <div class="article-cta">
+      <div class="article-cta-inner">
+        <span class="s-label">Gostou do conteúdo?</span>
+        <h2 class="article-cta-title">Vamos conversar sobre <em>o seu caso</em></h2>
+        <p class="article-cta-body">Cada pessoa tem uma história, objetivos e necessidades diferentes. Se você quer um acompanhamento pensado para o seu corpo e a sua rotina, dê o primeiro passo.</p>
+        <a href="https://wa.me/5511977431011?text=Ol%C3%A1%2C%20Wellington%21%20Li%20o%20artigo%20%22Por%20que%20adultos%2050%2B%20abandonam%20o%20treino%20e%20o%20que%20realmente%20mant%C3%A9m%20a%20consist%C3%AAncia%22%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" class="btn-primary" style="display:inline-block;background:var(--rust);max-width:380px;">Falar com Wellington</a>
+        <div style="margin-top:18px;">
+          <a href="#" onclick="showPage('blog'); return false;" class="article-back">← Ver outros artigos</a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer>
+  <div class="footer-left">
+    <img src="logo-wellington.png" alt="Wellington Brito" class="footer-logo-img">
+    <div class="footer-links">
+      <a href="#" onclick="showPage('home'); return false;">Início</a>
+      <a href="#" onclick="showPage('longevus'); return false;">Longevus</a>
+      <a href="#" onclick="showPage('blog'); return false;">Blog</a>
+    </div>
+  </div>
+  <div class="footer-right"><a href="https://britowellington.github.io/app.longevus/aluno.html?origem=site" class="footer-aluno">Já é aluno? Acesse sua área</a><a href="https://britowellington.github.io/app.longevus/" target="_blank" class="footer-pro">É profissional? Conheça a plataforma Longevus</a><span class="footer-copy">© <span class="ano">2026</span> Personal Longevus · Wellington Brito · SBC</span></div>
+</footer>
+</div><!-- /page-artigo-consistencia -->
+
+<script>
+document.querySelectorAll('.ano').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+// ── ROTEAMENTO SPA ──
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  var target = document.getElementById('page-' + name);
+  if (!target) { name = 'home'; target = document.getElementById('page-home'); }
+  target.classList.add('active');
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+  var map = {'home': 0, 'longevus': 1, 'blog': 2};
+  // Artigos destacam o "Blog" na navbar
+  var navKey = name.indexOf('artigo-') === 0 ? 'blog' : name;
+  var links = document.querySelectorAll('.nav-link');
+  if (links[map[navKey]] !== undefined && links[map[navKey]]) links[map[navKey]].classList.add('active');
+  window.scrollTo(0, 0);
+  document.getElementById('nav-links').classList.remove('open');
+  initReveal();
+  try { history.pushState({page: name}, '', '#' + name); } catch (e) { try { location.hash = name; } catch(e2){} }
+}
+
+function scrollToId(id) {
+  setTimeout(() => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }, 100);
+}
+
+// ── MENU MOBILE ──
+function toggleMenu() {
+  document.getElementById('nav-links').classList.toggle('open');
+}
+
+// ── SCROLL REVEAL ──
+function initReveal() {
+  const reveals = document.querySelectorAll('.page.active .reveal:not(.visible)');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+  reveals.forEach(el => observer.observe(el));
+}
+initReveal();
+
+// ── HASH ROUTING ──
+window.addEventListener('popstate', (e) => {
+  if (e.state && e.state.page) showPage(e.state.page);
+});
+var hash = location.hash.replace('#', '');
+if (hash && (['home','longevus','blog'].includes(hash) || document.getElementById('page-' + hash))) showPage(hash);
+</script>
+<a href="https://wa.me/5511977431011?text=Olá%2C%20Wellington%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação%20física." target="_blank" class="wa-float" aria-label="Agendar avaliação pelo WhatsApp"><svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>Agendar avaliação</span></a>
 </body>
 </html>
